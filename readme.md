@@ -87,7 +87,7 @@ node_modules/
 .swc/
 .*.env
 
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files**
 
 # dependencies
 /node_modules
@@ -126,7 +126,7 @@ next-env.d.ts
 
 - Ends here
 
-**if you forgot and didn't do any git commit, use **git reset** and check the files using *git status* **
+**if you forgot and didn't do any git commit, use **git reset** and check the files using** *git status*
 
 ## In the terminal : **git init git add . ** etc... then use github to create your remote origin and push
 
