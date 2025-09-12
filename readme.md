@@ -80,13 +80,54 @@ i.e. the layout.js file is the root layout that wraps all pages in your app, and
 
 8. Add your **.gitignore** file with the following before any git init and add :
 
-.env.*.local
-.env
+- Starts here
+
 node_modules/
 .next/
 .swc/
 .*.env
 
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+- Ends here
+
 **if you forgot and didn't do any git commit, use **git reset** and check the files using *git status* **
 
 ## In the terminal : **git init git add . ** etc... then use github to create your remote origin and push
+
+9. Add tailwind to your project
