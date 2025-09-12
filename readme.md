@@ -160,6 +160,8 @@ to your package.json:
     "css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   }, ...`
 
+  13. In layout.js add at the beginning `import '../src/output.css'`
+
 13. You have two running processes to stop and start for your projects now:
   - npm run dev
   - npm run css

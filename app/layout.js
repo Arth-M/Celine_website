@@ -1,10 +1,12 @@
+import '../src/output.css'
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>My Next.js App</title>
+        <title>Céline Castronovo - Psychologue - Montpellier</title>
       </head>
-      <body>{children}</body>
+      <body className="m-0 p-0 w-screen h-screen relative">{children}</body>
     </html>
   )
 }
