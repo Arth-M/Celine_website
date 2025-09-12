@@ -131,3 +131,37 @@ next-env.d.ts
 ## In the terminal : **git init git add . ** etc... then use github to create your remote origin and push
 
 9. Add tailwind to your project
+`npm install tailwindcss @tailwindcss/cli`
+
+10. Add a **src** directory with a **input.css** file and
+`@import "tailwindcss";`
+within it
+
+Project structure: <br><br>
+|your-project/|  --- | --- |<br>
+| -> | app/| --- | <br>
+| ---  | -> |layout.js| <br>
+| ---   | -> |page.js| <br>
+| -> |package.json| --- | <br>
+| -> |.env (optional)| --- | <br>
+| -> |.gitignore (optional)| --- | <br>
+| -> | src | --- | <br>
+| ---  | -> |input.css| <br>
+
+11. Start the Tailwind CLI build process
+`npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch`
+
+12. Add
+`"css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"`
+to your package.json:
+`{
+  "scripts": {
+    "dev": "next dev",
+    "css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  }, ...`
+
+13. You have two running processes to stop and start for your projects now:
+  - npm run dev
+  - npm run css
+
+  Those will launch the server and tailwind css
