@@ -22,9 +22,9 @@ for your **secrets**
 
 5. Add
 
-"scripts": {
+`code text`"scripts": {
   "dev": "next dev"
-},
+},`code text`
 
 in your package.json object to enable next server.
 package.json should look like this:
