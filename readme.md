@@ -28,7 +28,7 @@ for your **secrets**
 
 in your package.json object to enable next server.
 package.json should look like this:
-{
+`{
   "scripts": {
     "dev": "next dev"
   },
@@ -37,22 +37,22 @@ package.json should look like this:
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
-}
+}`
 
 6. Add an **app** directory with an **page.js** and **layout.js** file in it
 
 page.js:
-export default function Home() {
+`export default function Home() {
   return (
     <div>
       <h1>Welcome to Next.js!</h1>
       <p>Your app is running successfully.</p>
     </div>
   )
-}
+}`
 
 layout.js:
-export default function RootLayout({ children }) {
+`export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
@@ -61,16 +61,16 @@ export default function RootLayout({ children }) {
       <body>{children}</body>
     </html>
   )
-}
+}`
 
 Project structure:
-your-project/
-├── app/
-│   ├── layout.js
-│   └── page.js
-├── package.json
-├── .env (optional)
-└── .gitignore (optional)
+|your-project/| | |<br>
+|├──| app/| | <br>
+|│   |├── |layout.js| <br>
+|│   |└── |page.js| <br>
+|├── |package.json| | <br>
+|├── |.env (optional)| | <br>
+|└── |.gitignore (optional)| | <br>
 
 6. Run **npm run dev** in your terminal to launch the local server
 
