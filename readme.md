@@ -165,3 +165,12 @@ to your package.json:
   - npm run css
 
   Those will launch the server and tailwind css
+
+14. Production:
+When you build and deploy your app for production:
+add
+`"build": "next build",
+    "start": "next start"`to your package.json in scripts
+
+`npm run build` - builds your app for production
+`npm start` - runs the production version
