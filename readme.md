@@ -65,7 +65,7 @@ layout.js:
 
 Project structure: <br><br>
 |your-project/|  --- | --- |<br>
-| --- | app/| --- | <br>
+| -> | app/| --- | <br>
 | ---  | -> |layout.js| <br>
 | ---   | -> |page.js| <br>
 | -> |package.json| --- | <br>
