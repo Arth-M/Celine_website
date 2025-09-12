@@ -65,12 +65,12 @@ layout.js:
 
 Project structure: <br><br>
 |your-project/|  --- | --- |<br>
-|├─| app/| --- | <br>
-|│   |├─ |layout.js| <br>
-|│   |└─ |page.js| <br>
-|├─ |package.json| --- | <br>
-|├─ |.env (optional)| --- | <br>
-|└─ |.gitignore (optional)| --- | <br>
+| --- | app/| --- | <br>
+| ---  | -> |layout.js| <br>
+| ---   | -> |page.js| <br>
+| -> |package.json| --- | <br>
+| -> |.env (optional)| --- | <br>
+| -> |.gitignore (optional)| --- | <br>
 
 6. Run **npm run dev** in your terminal to launch the local server
 
