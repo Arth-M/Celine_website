@@ -3,6 +3,7 @@ import DoctolibButton from "./components/doctolib_button";
 import HeroImage from "./components/hero_image";
 import Biography from "./components/biography";
 import Psychologue from "./components/psychologue";
+import InfosPratiques from "./components/infosPratiques";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       </section>
       <section id='section-psycho' className="flex-initial">
         <Psychologue />
+      </section>
+      <section id="section-infos">
+        <InfosPratiques />
       </section>
     </main>
   )
