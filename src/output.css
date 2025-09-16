@@ -25,6 +25,7 @@
     --color-teal-700: oklch(51.1% 0.096 186.391);
     --color-teal-800: oklch(43.7% 0.078 188.216);
     --color-teal-900: oklch(38.6% 0.063 188.416);
+    --color-teal-950: oklch(27.7% 0.046 192.524);
     --color-cyan-500: oklch(71.5% 0.143 215.221);
     --color-cyan-600: oklch(60.9% 0.126 221.723);
     --color-cyan-700: oklch(52% 0.105 223.128);
@@ -210,14 +211,62 @@
   .inset-x-0 {
     inset-inline: calc(var(--spacing) * 0);
   }
+  .-top-0 {
+    top: calc(var(--spacing) * -0);
+  }
+  .-top-5 {
+    top: calc(var(--spacing) * -5);
+  }
   .-top-10 {
     top: calc(var(--spacing) * -10);
+  }
+  .-top-20 {
+    top: calc(var(--spacing) * -20);
+  }
+  .-top-30 {
+    top: calc(var(--spacing) * -30);
+  }
+  .-top-50 {
+    top: calc(var(--spacing) * -50);
+  }
+  .-top-70 {
+    top: calc(var(--spacing) * -70);
+  }
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
   .-bottom-35 {
     bottom: calc(var(--spacing) * -35);
+  }
+  .-left-0 {
+    left: calc(var(--spacing) * -0);
+  }
+  .-left-5 {
+    left: calc(var(--spacing) * -5);
+  }
+  .-left-15 {
+    left: calc(var(--spacing) * -15);
+  }
+  .-left-50 {
+    left: calc(var(--spacing) * -50);
+  }
+  .-left-75 {
+    left: calc(var(--spacing) * -75);
+  }
+  .-left-100 {
+    left: calc(var(--spacing) * -100);
+  }
+  .-left-150 {
+    left: calc(var(--spacing) * -150);
+  }
+  .-left-200 {
+    left: calc(var(--spacing) * -200);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -258,11 +307,20 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
   }
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
@@ -275,6 +333,18 @@
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-13 {
+    margin-bottom: calc(var(--spacing) * 13);
+  }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
   }
   .flex {
     display: flex;
@@ -562,6 +632,9 @@
   }
   .text-teal-900 {
     color: var(--color-teal-900);
+  }
+  .text-teal-950 {
+    color: var(--color-teal-950);
   }
   .underline {
     text-decoration-line: underline;

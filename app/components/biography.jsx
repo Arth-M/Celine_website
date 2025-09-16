@@ -1,7 +1,7 @@
 export default function Biography() {
   return (
-    <div className="container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-7">
-      <hr className="border-gray-200 sm:mx-auto dark:border-gray-700 w-3xs md:w-xs lg:w-md mb-6" />
+    <div className="container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-12">
+      <hr className="border-gray-200 mx-auto dark:border-gray-700 w-3xs md:w-xs lg:w-md mb-12" />
       <h2 className="font-semibold">Qui suis-je ? </h2>
       <p className="font-light font-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

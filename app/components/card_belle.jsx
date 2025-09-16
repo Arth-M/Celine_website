@@ -15,9 +15,9 @@ export default function CardBelle() {
               className="object-scale-down rounded-full w-[60%] h-auto mx-auto mb-3 mt-2 border-1 border-teal-700 shadow-sm"
             />
             <p className="text-teal-900 mx-auto text-center w-fit no-wrap font-semibold">Céline Castronovo</p>
-            <p className="text-teal-800 mx-auto text-center w-fit font-light">Psychologue</p>
-            <p className="text-teal-700 mx-auto text-center w-fit font-light mt-2">EMDR, TCC</p>
-            <p className="text-teal-700 mx-auto text-center w-fit font-light">Émotions, Cognition</p>
+            <p className="text-teal-900 mx-auto text-center w-fit font-light">Psychologue</p>
+            <p className="text-teal-800 mx-auto text-center w-fit font-light mt-2">EMDR, TCC</p>
+            <p className="text-teal-800 mx-auto text-center w-fit font-light">Émotions, Cognition</p>
           </div>
         </div>
     </div>
