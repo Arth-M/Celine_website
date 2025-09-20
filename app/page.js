@@ -13,7 +13,6 @@ export default function Home() {
       <Navbar />
       <section id='section-accueil' className="flex-initial">
       <HeroImage />
-      <FirstInfos />
       </section>
       <section id='section-biography' className="flex-initial" data-navbarneeded>
         <Biography />
