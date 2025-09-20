@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
-import DoctolibButton from './doctolib_button';
+import DoctolibButton from './first_infos';
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false);

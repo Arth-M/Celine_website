@@ -70,7 +70,7 @@ export default function Navbar() {
               <div className="flex space-x-4">
                 <a href="#section-accueil" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Accueil</a>
                 <a href="#section-biography" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Qui suis-je ?</a>
-                <a href="#section-psycho" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Mes méthodes</a>
+                <a href="#section-psycho" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Pourquoi consulter ?</a>
                 <a href="#section-infos" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function Navbar() {
         <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-100 w-fit">
           <a href="#section-accueil" className="block rounded-md px-3 py-2 text-base font-medium text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap" onClick={() => setIsMobileMenuOpen(false)}>Accueil</a>
           <a href="#section-biography" className="block rounded-md px-3 py-2 text-base font-medium text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap" onClick={() => setIsMobileMenuOpen(false)}>Qui suis-je ?</a>
-          <a href="#section-psycho" className="block rounded-md px-3 py-2 text-base font-medium text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap" onClick={() => setIsMobileMenuOpen(false)}>Mes méthodes</a>
+          <a href="#section-psycho" className="block rounded-md px-3 py-2 text-base font-medium text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap" onClick={() => setIsMobileMenuOpen(false)}>Pourquoi consulter ?</a>
           <a href="#section-infos" className="block rounded-md px-3 py-2 text-base font-medium text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
         </div>
       </div>

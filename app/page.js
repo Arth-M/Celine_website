@@ -1,5 +1,5 @@
 import CardBelle from "./components/card_belle";
-import DoctolibButton from "./components/doctolib_button";
+import FirstInfos from "./components/first_infos";
 import HeroImage from "./components/hero_image";
 import Biography from "./components/biography";
 import Psychologue from "./components/psychologue";
@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <section id='section-accueil' className="flex-initial">
       <HeroImage />
-      <DoctolibButton />
+      <FirstInfos />
       </section>
       <section id='section-biography' className="flex-initial" data-navbarneeded>
         <Biography />

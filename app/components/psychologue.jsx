@@ -11,45 +11,47 @@ export default function Psychologue() {
 
         <div className="container @container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-5 relative">
           <div className="text-teal-800 border-1 border-gray-200 bg-gray-100/70 rounded-2xl p-5 w-fit mx-auto shadow-2xl">
-          <h2 className="font-semibold tracking-wide @lg:text-center mx-auto">Qu'est-ce qu'un psychologue ? </h2>
-          <p className="@sm:w-xs @md:w-sm @lg:w-md @lg:mx-auto">
-            {/* text-[#88ECEB] */}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
+            <h2 className="font-semibold tracking-wide @lg:text-center mx-auto">Pourquoi consulter ? </h2>
+            <p className="@sm:w-xs @md:w-sm @lg:w-md @lg:mx-auto">
+                {/* text-[#88ECEB] */}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            </div>
-
-          <div aria-hidden="true" className="absolute inset-x-0 -left-50 -z-10 transform-gpu overflow-hidden px-36 blur-3xl md:invisible">
-          <div style={{clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",}} className="mx-auto aspect-1155/678 w-288.75 bg-linear-to-tr from-sky-500 to-[#88ECEB] opacity-70"></div>
           </div>
-
-
-          <div className="lg:flex">
-          <div className="flex-initial  bg-[#ef814b]/98 text-teal-950 rounded-2xl p-5 shadow-lg sm:mb-8 md:w-max-[40%] my-4 lg:mr-5">
-            {/* text-orange-400 */}
-            <h2 className="font-semibold tracking-wide">Mes méthodes</h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-
-          <div className="flex-initial bg-[#E5FCD5]/98 text-teal-000 rounded-2xl p-5 shadow-lg sm:mb-8 md:w-max-[40%] my-4">
-            {/* text-green-600 */}
-            <h2 className="font-semibold tracking-wide">Pour qui ?</h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          </div>
-
         </div>
+
+        <div aria-hidden="true" className="absolute inset-x-0 -left-50 -z-10 transform-gpu overflow-hidden px-36 blur-3xl md:invisible">
+        <div style={{clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",}} className="mx-auto aspect-1155/678 w-288.75 bg-linear-to-tr from-sky-500 to-[#88ECEB] opacity-70"></div>
+        </div>
+
+        <div className="w-screen  bg-[#ef814b]/98 text-teal-950 p-5 shadow-lg sm:mb-8 my-4">
+        <div className="container @container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-5 relative">
+          {/* text-orange-400 */}
+          <h2 className="font-semibold tracking-wide">Mes méthodes</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+
+        <div className="w-screen bg-[#E5FCD5]/98 text-teal-700 p-5 shadow-lg sm:mb-8 my-4">
+        <div className="container @container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-5 relative">
+
+          {/* text-green-600 */}
+          <h2 className="font-semibold tracking-wide">Pour qui ?</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+
     </div>
   )
 }

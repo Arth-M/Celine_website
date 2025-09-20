@@ -1,7 +1,6 @@
 export default function Biography() {
   return (
-    <div className="container @container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-12 relative">
-      <hr className="border-gray-200 mx-auto dark:border-gray-700 w-3xs md:w-xs lg:w-md mb-12" />
+    <div className="container @container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-20 relative">
       <h2 className="font-semibold tracking-wider @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800">Qui suis-je ? </h2>
       <p className="font-light font-gray-700 @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -9,6 +8,7 @@ export default function Biography() {
         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+        <hr className="border-gray-200 mx-auto dark:border-gray-700 w-3xs md:w-xs lg:w-md my-12" />
     </div>
   )
 }
