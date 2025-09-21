@@ -80,7 +80,7 @@ export default function Navbar() {
                   isVisible ? 'text-teal-700' : ' text-teal-900'
                   }`}>10 avenue de Toulouse, 34070 Montpellier</p>
             </div>
-            <div class="hidden lg:ml-6 lg:flex justify-center items-center">
+            <div className="hidden lg:ml-6 lg:flex justify-center items-center">
               <div className="space-x-4 justify-center items-center">
                 <a href="#section-accueil" className={`rounded-md font-light text-sm hover:bg-white/5 hover:text-white ${
                   isVisible ? ' text-teal-700' : ' text-teal-900'
