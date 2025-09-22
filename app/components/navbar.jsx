@@ -76,7 +76,7 @@ export default function Navbar() {
                 priority={true}  // This disables lazy loading to prioritize the loading for hero section
                 className="object-scale-down border-r-4 lg:object-cover"
               />
-              <p className={`font-light tracking-tight text-teal-900 text-sm ${
+              <p className={`font-light select-all tracking-tight text-teal-900 text-sm ${
                   isVisible ? 'text-teal-700' : ' text-teal-900'
                   }`}>10 avenue de Toulouse, 34070 Montpellier</p>
             </div>
