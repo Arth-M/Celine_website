@@ -54,7 +54,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 right-0 left-0 z-50 bg-gray-100 transition-opacity duration-200 ${
       isVisible ? 'bg-gray-100 border-b border-b-teal-600' : 'bg-transparent'
     }`} ref={menuRef}>
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 mt-2">
         <div className="relative flex h-16 items-center justify-between">
 
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
