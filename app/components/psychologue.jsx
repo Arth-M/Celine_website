@@ -39,7 +39,7 @@ export default function Psychologue() {
           </div>
         </div>
 
-        <div className="w-screen bg-[#E5FCD5]/98 text-teal-700 p-5 shadow-lg sm:mb-8 my-4">
+        <div className="w-screen bg-[#CEF2F2]/98 text-teal-700 p-5 shadow-lg sm:mb-8 my-4">
         <div className="container @container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-5 relative">
 
           {/* text-green-600 */}
