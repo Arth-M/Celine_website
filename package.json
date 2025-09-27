@@ -1,7 +1,9 @@
 {
   "scripts": {
     "dev": "next dev",
-    "css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "build": "next build",
+    "start": "next start",
+    "format": "npx prettier . --write"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
@@ -9,5 +11,10 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "postcss": "^8.5.6",
+    "prettier": "3.6.2"
   }
 }

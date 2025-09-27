@@ -1,7 +1,0 @@
-@import "tailwindcss";
-
-.header-background-accueil {
-  background-position: center;
-  background-size: cover;
-  background-color: black;
-}

@@ -9,15 +9,16 @@ npm install react@latest react-dom@latest next@latest
 This will install all the depencies in the package-lock.json
 
 3. The packages that should be seen in package.json are
-  - Next
-  - React
-  - React-dom
+
+- Next
+- React
+- React-dom
 
 4. Next automatically uses Telemetry to see wich usage is made of Next, to opt-out add
-**NEXT_TELEMETRY_DISABLED=1** in your .env file.
+   **NEXT_TELEMETRY_DISABLED=1** in your .env file.
 
 Next recommends to have your **.gitignore** file pointing to
-.env.*.local
+.env.\*.local
 for your **secrets**
 
 5. Add
@@ -64,10 +65,10 @@ layout.js:
 }`
 
 Project structure: <br><br>
-|your-project/|  --- | --- |<br>
+|your-project/| --- | --- |<br>
 | -> | app/| --- | <br>
-| ---  | -> |layout.js| <br>
-| ---   | -> |page.js| <br>
+| --- | -> |layout.js| <br>
+| --- | -> |page.js| <br>
 | -> |package.json| --- | <br>
 | -> |.env (optional)| --- | <br>
 | -> |.gitignore (optional)| --- | <br>
@@ -75,8 +76,8 @@ Project structure: <br><br>
 6. Run **npm run dev** in your terminal to launch the local server
 
 7. The **layout.js** file in the app directory is now the main layout of the app. You can add metadata, and UI elements
-that will be shared across all the pages (e.g. navigation, footer and so on).
-i.e. the layout.js file is the root layout that wraps all pages in your app, and page.js is your home page component.
+   that will be shared across all the pages (e.g. navigation, footer and so on).
+   i.e. the layout.js file is the root layout that wraps all pages in your app, and page.js is your home page component.
 
 8. Add your **.gitignore** file with the following before any git init and add :
 
@@ -85,94 +86,104 @@ i.e. the layout.js file is the root layout that wraps all pages in your app, and
 node_modules/
 .next/
 .swc/
-.*.env
+.\*.env
 
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files**
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files\*\*
 
 # dependencies
+
 /node_modules
 /.pnp
 .pnp.js
 
 # testing
+
 /coverage
 
 # next.js
+
 /.next/
 /out/
 
 # production
+
 /build
 
 # misc
+
 .DS_Store
-*.pem
+\*.pem
 
 # debug
+
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+yarn-error.log\*
 
 # local env files
-.env*.local
+
+.env\*.local
 .env
 
 # vercel
+
 .vercel
 
 # typescript
-*.tsbuildinfo
+
+\*.tsbuildinfo
 next-env.d.ts
 
 - Ends here
 
-**if you forgot and didn't do any git commit, use **git reset** and check the files using** *git status*
+**if you forgot and didn't do any git commit, use **git reset** and check the files using** _git status_
 
 ## In the terminal : **git init git add . ** etc... then use github to create your remote origin and push
 
 9. Add tailwind to your project
-`npm install tailwindcss @tailwindcss/cli`
+   `npm install tailwindcss @tailwindcss/cli`
 
 10. Add a **src** directory with a **input.css** file and
-`@import "tailwindcss";`
-within it
+    `@import "tailwindcss";`
+    within it
 
 Project structure: <br><br>
-|your-project/|  --- | --- |<br>
+|your-project/| --- | --- |<br>
 | -> | app/| --- | <br>
-| ---  | -> |layout.js| <br>
-| ---   | -> |page.js| <br>
+| --- | -> |layout.js| <br>
+| --- | -> |page.js| <br>
 | -> |package.json| --- | <br>
 | -> |.env (optional)| --- | <br>
 | -> |.gitignore (optional)| --- | <br>
 | -> | src | --- | <br>
-| ---  | -> |input.css| <br>
+| --- | -> |input.css| <br>
 
 11. Start the Tailwind CLI build process
-`npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch`
+    `npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch`
 
 12. Add
-`"css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"`
-to your package.json:
-`{
-  "scripts": {
-    "dev": "next dev",
-    "css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
-  }, ...`
+    `"css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"`
+    to your package.json:
+    `{
+"scripts": {
+  "dev": "next dev",
+  "css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+}, ...`
 
-  13. In layout.js add at the beginning `import '../src/output.css'`
+13. In layout.js add at the beginning `import '../src/output.css'`
 
-13. You have two running processes to stop and start for your projects now:
-  - npm run dev
-  - npm run css
+14. You have two running processes to stop and start for your projects now:
 
-  Those will launch the server and tailwind css
+- npm run dev
+- npm run css
+
+Those will launch the server and tailwind css
 
 14. Production:
-When you build and deploy your app for production:
-add
-`"build": "next build",
-    "start": "next start"`to your package.json in scripts
+    When you build and deploy your app for production:
+    add
+    `"build": "next build",
+"start": "next start"`to your package.json in scripts
 
 `npm run build` - builds your app for production
 `npm start` - runs the production version
