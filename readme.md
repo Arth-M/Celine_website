@@ -140,7 +140,7 @@ next-env.d.ts
 
 ## In the terminal : **git init git add . ** etc... then use github to create your remote origin and push
 
-9. Add tailwind to your project
+9. Add tailwind to your project 9 to 14 are not god anymore, this is for manual install of tailwind if not with next, see next tuto for tailwind installation
    `npm install tailwindcss @tailwindcss/cli`
 
 10. Add a **src** directory with a **input.css** file and

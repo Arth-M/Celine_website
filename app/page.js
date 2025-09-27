@@ -1,5 +1,3 @@
-import CardBelle from './components/card_belle'
-import FirstInfos from './components/first_infos'
 import HeroImage from './components/hero_image'
 import Biography from './components/biography'
 import Psychologue from './components/psychologue'
@@ -15,14 +13,14 @@ export default function Home() {
       </section>
       <section
         id="section-biography"
-        className="flex-initial"
+        className="flex-initial lg:scroll-mt-15 -scroll-mt-10"
         data-navbarneeded
       >
         <Biography />
       </section>
-      <section id="section-psycho" className="flex-initial">
+      <div className="flex-initial">
         <Psychologue />
-      </section>
+      </div>
       <section id="section-infos">
         <InfosPratiques />
       </section>

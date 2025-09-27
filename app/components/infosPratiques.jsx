@@ -2,17 +2,17 @@ import Image from 'next/image'
 
 export default function InfosPratiques() {
   return (
-    <div className="w-screen h-fit bg-[#FEFEBF] mt-25">
-      <div className="flex flex-wrap">
-        <div className="flex flex-col text-teal-900 mx-auto min-w-80 max-w-96 px-4 relative">
-          <div className="w-fit relative my-4">
+    <div className="w-screen h-fit bg-pale-prim-300 mt-25">
+      <div className="flex flex-wrap text-pale-prim-900 lg:w-[80%] mx-auto">
+        <div className="flex flex-col mx-auto min-w-80 max-w-96 px-4 relative">
+          <div className="w-fit relative mt-4">
             <h2 className="font-light tracking-wide w-fit text-start">
               Informations pratiques
             </h2>
-            <hr className="border-teal-200 mx-auto dark:border-gray-700 w-full mt-2" />
+            <hr className="border-pale-prim-100 mx-auto dark:border-gray-700 w-full my-5" />
           </div>
           {/* horaires */}
-          <div className="flex flex-nowrap gap-x-4 my-2 mt-2">
+          <div className="flex flex-nowrap gap-x-4 my-2">
             <div className="flex gap-x-2 items-center text-sm/6">
               <Image
                 src="/images/clock2.svg"
@@ -67,31 +67,39 @@ export default function InfosPratiques() {
           </div>
 
           {/* tarifs */}
-          <div className="h-fit">
-            <div className="w-fit relative my-4">
-              <hr className="border-teal-200 mx-auto dark:border-gray-700 w-full mb-2" />
+          <div className="h-fit mb-5">
+            <div className="w-fit relative">
+              <hr className="border-pale-prim-100 mx-auto dark:border-gray-700 w-full my-5" />
               <p className="text-start text-sm/6">
                 Consultation d'une heure : 60 € TTC
               </p>
             </div>
             <p className="text-start text-sm/6">
-              Dispositif Santé Psy Étudiants- 45 min : Nécessité de présenter un
+              Dispositif Santé Psy Étudiants - 45 min : Nécessité de présenter un
               numéro INE
             </p>
           </div>
         </div>
         {/* google map */}
-        <div className="mx-auto ">
+        <div className="mx-auto my-auto flex justify-center align-center h-full w-fit">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.2971325847216!2d3.8646004118297057!3d43.6003545709841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6afd200cec417%3A0x176c4f90a36d217f!2sC%C3%A9line%20Castronovo!5e0!3m2!1sfr!2sfr!4v1758445164370!5m2!1sfr!2sfr"
             width="400"
             height="300"
             allowFullScreen=""
-            loading="lazy"
+            alt="google map with the adress of Céline Castronovo"
+            // loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-screen md:w-[400px] px-4 mt-6 lg:mt-16 object-scale-down"
+            className="object-scale-down mx-auto w-[99%] lg:w-[100%]"
           ></iframe>
         </div>
+      </div>
+      <div className='w-[70%] lg:w-[50%] mx-auto'>
+        <hr className="border-pale-prim-100 dark:border-gray-700 w-full mt-10 mb-5" />
+      </div>
+      <div className="block text-pale-prim-900 text-center">
+        <p className='font-medium text-xs'>E.I. Céline Castronovo - 2025 Tous droits réservés</p>
+        <a href="http://www.atuweb.fr" className="font-medium text-xs">ATU-Web</a>
       </div>
     </div>
   )

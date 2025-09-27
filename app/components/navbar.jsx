@@ -57,8 +57,8 @@ export default function Navbar() {
       }`}
       ref={menuRef}
     >
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 mt-2">
-        <div className="relative flex h-16 items-center justify-between">
+      <div className="mx-auto w-screen px-2 mt-2">
+        <div className="relative flex h-16 items-center justify-between w-[100%]">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
             <span className="sr-only">Rendez-vous Doctolib</span>
             <a
@@ -96,39 +96,48 @@ export default function Navbar() {
                 10 avenue de Toulouse, 34070 Montpellier
               </p>
             </div>
-            <div className="hidden lg:ml-6 lg:flex justify-center items-center">
+            <div className="hidden lg:ml-6 lg:flex justify-center items-center min-w-[559px]">
               <div className="space-x-4 justify-center items-center">
                 <a
                   href="#section-accueil"
-                  className={`rounded-md font-light text-sm hover:bg-white/5 hover:text-white ${
-                    isVisible ? ' text-teal-700' : ' text-teal-900'
+                  className={`rounded-md font-light text-sm hover:bg-white/5  ${
+                    isVisible ? ('text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                   }`}
                 >
                   Accueil
                 </a>
                 <a
                   href="#section-biography"
-                  className={`rounded-md font-light text-sm hover:bg-white/5 hover:text-white ${
-                    isVisible ? ' text-teal-700' : ' text-teal-900'
+                  className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                    isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                   }`}
                 >
                   Qui suis-je ?
                 </a>
                 <a
-                  href="#section-psycho"
-                  className={`rounded-md font-light text-sm hover:bg-white/5 hover:text-white ${
-                    isVisible ? ' text-teal-700' : ' text-teal-900'
+                  href="#section-pourquoi"
+                  className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                    isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                   }`}
                 >
                   Pourquoi consulter ?
                 </a>
                 <a
-                  href="#section-infos"
-                  className={`rounded-md font-light text-sm hover:bg-white/5 hover:text-white ${
-                    isVisible ? ' text-teal-700' : ' text-teal-900'
+                  href="#section-methodes"
+                  className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                    isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                   }`}
                 >
-                  Contact
+                  Mes méthodes
+                </a>
+
+                <a
+                  href="#section-infos"
+                  className={`rounded-md font-light text-sm hover:bg-white/5  ${
+                    isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                  }`}
+                >
+                  Informations Pratiques
                 </a>
               </div>
             </div>
@@ -175,31 +184,45 @@ export default function Navbar() {
         <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-100 w-fit">
           <a
             href="#section-accueil"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Accueil
           </a>
           <a
             href="#section-biography"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Qui suis-je ?
           </a>
           <a
-            href="#section-psycho"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap"
+            href="#section-pourquoi"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Pourquoi consulter ?
           </a>
           <a
-            href="#section-infos"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-800 hover:bg-white/5 hover:text-white text-right whitespace-nowrap"
+            href="#section-methodes"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Contact
+            Mes méthodes
+          </a>
+          <a
+            href="#section-populationss"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Pour qui ?
+          </a>
+          <a
+            href="#section-infos"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Informations pratiques
           </a>
         </div>
       </div>

@@ -3,7 +3,7 @@ import DoctolibButton from './first_infos'
 
 export default function CardBelle() {
   return (
-    <div className="absolute -bottom-33 sm:-bottom-25 md:-bottom-15 lg:bottom-15 xl:bottom-25 mx-auto left-0 right-0 w-[40%] min-w-[180px] md:w-[30%] lg:w-[20%] z-40">
+    <div className="absolute -bottom-36 sm:-bottom-25 md:-bottom-15 lg:bottom-15 xl:bottom-25 mx-auto left-0 right-0 w-[40%] min-w-[180px] md:w-[30%] lg:w-[20%] z-40">
       <div className="mx-auto border shadow-lg border-gray-300/30 bg-gray-200/80 h-fit p-(--card-padding) rounded-(--card-radius) [--card-radius:var(--radius-2xl)] [--card-padding:--spacing(0.5)]">
         <div className="mx-auto rounded-[calc(var(--card-radius)-var(--card-padding))] border bg-gray-100 border-gray-200 px-2 pt-3 pb-4">
           {/* bg-[#88ECEB] */}
