@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function InfosPratiques() {
   return (
-    <div className="w-screen h-fit bg-pale-prim-300 mt-25">
+    <div className="w-screen h-fit bg-pale-prim-300 mt-25 pb-3 pt-3">
       <div className="flex flex-wrap text-pale-prim-900 lg:w-[80%] mx-auto">
         <div className="flex flex-col mx-auto min-w-80 max-w-96 px-4 relative">
           <div className="w-fit relative mt-4">
@@ -19,7 +19,8 @@ export default function InfosPratiques() {
                 alt="Icone d'horloge pour décrire les horaires"
                 width="20"
                 height="20"
-                priority={true} // This disables lazy loading to prioritize the loading for hero section
+                loading='lazy'
+                priority={false}
                 className="object-scale-down text-start col-span"
               />
             </div>
@@ -39,7 +40,8 @@ export default function InfosPratiques() {
                 alt="Icone de mail pour indiquer l'adresse mail"
                 width="20"
                 height="20"
-                priority={true} // This disables lazy loading to prioritize the loading for hero section
+                loading='lazy'
+                priority={false}
                 className="object-scale-down text-start col-span"
               />
             </div>
@@ -59,7 +61,8 @@ export default function InfosPratiques() {
                 alt="Icone de téléphone pour indiquer le numéro de téléphone"
                 width="20"
                 height="20"
-                priority={true} // This disables lazy loading to prioritize the loading for hero section
+                loading='lazy'
+                priority={false}
                 className="object-scale-down text-start col-span"
               />
             </div>

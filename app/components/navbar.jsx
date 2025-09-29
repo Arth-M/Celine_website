@@ -57,9 +57,9 @@ export default function Navbar() {
       }`}
       ref={menuRef}
     >
-      <div className="mx-auto w-screen px-2 mt-2">
-        <div className="relative flex h-16 items-center justify-between w-[100%]">
-          <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
+      <div className="mx-auto w-screen px-2 md:px-5 mt-1 lg:mt-4">
+        <div className="relative w-full grid grid-cols-[minmax(110px,1fr)_minmax(180px,4fr)_minmax(30px,1fr)] lg:grid-cols-[minmax(110px,1fr)_minmax(310px,3fr)_minmax(560px,4fr)] h-16 items-center justify-center">
+          {/* <div className="absolute inset-y-0 left-0 flex items-center md:hidden min-w-[120px]">
             <span className="sr-only">Rendez-vous Doctolib</span>
             <a
               href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
@@ -67,83 +67,86 @@ export default function Navbar() {
               className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] w-25 h-11 bg-contain bg-no-repeat mx-auto"
               target="_blank"
             ></a>
+          </div> */}
+
+
+          <div className="inset-y-0 left-0 flex items-center">
+            <span className="sr-only">Rendez-vous Doctolib</span>
+            <a
+              href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
+              rel="keep-params"
+              className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] w-25 h-11 bg-contain bg-no-repeat lg:mx-auto"
+              target="_blank"
+            ></a>
           </div>
 
-          <div className="flex flex-1 items-center justify-between lg:items-stretch lg:justify-between">
-            <div className="inset-y-0 left-0 flex items-center">
-              <span className="sr-only">Rendez-vous Doctolib</span>
+          <div className="flex justify-start items-center wrap-normal">
+            <Image
+              src="/images/pin.svg"
+              alt="Indication sur la localisation du cabinet"
+              width="30"
+              height="30"
+              priority={true} // This disables lazy loading to prioritize the loading for hero section
+              className="object-scale-down border-r-4 lg:object-cover"
+            />
+            <p
+              className={`font-light select-all tracking-tight text-teal-900 text-sm ${
+                isVisible ? 'text-teal-700' : ' text-teal-900'
+              }`}
+            >
+              10 avenue de Toulouse, 34070 Montpellier
+            </p>
+          </div>
+
+
+          <div className="hidden lg:flex justify-center items-center mx-auto min-w-[559px]">
+            <div className="space-x-4 justify-center items-center">
               <a
-                href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
-                rel="keep-params"
-                className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] w-25 h-11 bg-contain bg-no-repeat mx-auto"
-                target="_blank"
-              ></a>
-            </div>
-            <div className="flex justify-center items-center mr-14 ml-6 lg:m-0  wrap-normal">
-              <Image
-                src="/images/pin.svg"
-                alt="Indication sur la localisation du cabinet"
-                width="30"
-                height="30"
-                priority={true} // This disables lazy loading to prioritize the loading for hero section
-                className="object-scale-down border-r-4 lg:object-cover"
-              />
-              <p
-                className={`font-light select-all tracking-tight text-teal-900 text-sm ${
-                  isVisible ? 'text-teal-700' : ' text-teal-900'
+                href="#section-accueil"
+                className={`rounded-md font-light text-sm hover:bg-white/5  ${
+                  isVisible ? ('text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                 }`}
               >
-                10 avenue de Toulouse, 34070 Montpellier
-              </p>
-            </div>
-            <div className="hidden lg:ml-6 lg:flex justify-center items-center min-w-[559px]">
-              <div className="space-x-4 justify-center items-center">
-                <a
-                  href="#section-accueil"
-                  className={`rounded-md font-light text-sm hover:bg-white/5  ${
-                    isVisible ? ('text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
-                  }`}
-                >
-                  Accueil
-                </a>
-                <a
-                  href="#section-biography"
-                  className={`rounded-md font-light text-sm hover:bg-white/5 ${
-                    isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
-                  }`}
-                >
-                  Qui suis-je ?
-                </a>
-                <a
-                  href="#section-pourquoi"
-                  className={`rounded-md font-light text-sm hover:bg-white/5 ${
-                    isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
-                  }`}
-                >
-                  Pourquoi consulter ?
-                </a>
-                <a
-                  href="#section-methodes"
-                  className={`rounded-md font-light text-sm hover:bg-white/5 ${
-                    isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
-                  }`}
-                >
-                  Mes méthodes
-                </a>
+                Accueil
+              </a>
+              <a
+                href="#section-biography"
+                className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                }`}
+              >
+                Qui suis-je ?
+              </a>
+              <a
+                href="#section-pourquoi"
+                className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                }`}
+              >
+                Pourquoi consulter ?
+              </a>
+              <a
+                href="#section-methodes"
+                className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                }`}
+              >
+                Mes méthodes
+              </a>
 
-                <a
-                  href="#section-infos"
-                  className={`rounded-md font-light text-sm hover:bg-white/5  ${
-                    isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
-                  }`}
-                >
-                  Informations Pratiques
-                </a>
-              </div>
+              <a
+                href="#section-infos"
+                className={`rounded-md font-light text-sm hover:bg-white/5  ${
+                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                }`}
+              >
+                Informations Pratiques
+              </a>
             </div>
           </div>
 
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0 lg:invisible">
+
+          <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0 lg:invisible">
             {/* Mobile menu button with hamburger icon */}
             <button
               type="button"
@@ -151,7 +154,7 @@ export default function Navbar() {
                 e.stopPropagation()
                 setIsMobileMenuOpen(!isMobileMenuOpen)
               }}
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 hover:bg-white/5 focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500 z-50"
+              className="relative inline-flex items-center justify-center content-center rounded-md my-auto px-0 text-gray-800 hover:bg-white/5 focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500 z-50"
             >
               <span className="sr-only">Open main menu</span>
               {/* Hamburger Icon */}
