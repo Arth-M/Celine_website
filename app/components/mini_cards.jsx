@@ -1,10 +1,12 @@
 import Image from 'next/image'
 
-export default function MiniCards(image, texte) {
+export default function MiniCards({ image, texte, background, textColor }) {
   return (
-    <div className="w-[170px] h-fit flex flex-col bg-crusta-300 text-crusta-900 rounded-2xl">
+    <div
+      className={`${background} ${textColor} w-[170px] h-fit flex flex-col rounded-2xl`}
+    >
       <Image
-        src="/images/cognition-color.svg"
+        src={`/images/${image}`}
         alt="Icone de téléphone pour indiquer le numéro de téléphone"
         width="150"
         height="150"
@@ -12,7 +14,9 @@ export default function MiniCards(image, texte) {
         priority={false}
         className="object-scale-down text-start col-span mx-auto"
       />
-      <p className="text-center text-wrap px-2">Thérapie centrée sur les émotions hohohohoho</p>
+      <p className="text-center text-wrap px-2 font-semibold tracking-wide">
+        {texte}
+      </p>
     </div>
   )
 }

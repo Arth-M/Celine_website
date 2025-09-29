@@ -19,7 +19,7 @@ export default function Psychologue() {
         <hr className="border-gray-200 invisible dark:border-gray-700 w-20 mt-12 mb-6" />
         <hr className="border-gray-200 invisible dark:border-gray-700 w-20 mt-12 mb-6" />
       </div>
-      <MiniCards />
+      <MiniCards image="cognition-color.svg" texte="Thérapie centrée sur les émotions" background='bg-crusta-200' textColor='text-crusta-500'/>
       <section id="section-pourquoi" className="scroll-mt-30">
         <div className="container @container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-5 relative">
           <div className="text-teal-800 border-1 border-gray-200 bg-gray-100/70 rounded-2xl p-5 w-fit mx-auto shadow-2xl">
