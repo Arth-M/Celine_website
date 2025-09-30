@@ -1,6 +1,16 @@
 import MiniCards from './mini_cards'
 
 export default function Psychologue() {
+  const miniCardsContent = [
+    {
+      image: 'cognition-color.svg',
+      texte: 'Thérapie centrée sur les émotions',
+      background: 'bg-crusta-200',
+      textColor: 'text-crusta-500',
+      card_num: 1,
+    },
+  ]
+
   return (
     <div className="relative">
       <div
@@ -19,7 +29,17 @@ export default function Psychologue() {
         <hr className="border-gray-200 invisible dark:border-gray-700 w-20 mt-12 mb-6" />
         <hr className="border-gray-200 invisible dark:border-gray-700 w-20 mt-12 mb-6" />
       </div>
-      <MiniCards image="cognition-color.svg" texte="Thérapie centrée sur les émotions" background='bg-crusta-200' textColor='text-crusta-500'/>
+
+      {miniCardsContent.map((content) => (
+        <MiniCards
+          key={'card' + content.card_num}
+          image={content.image}
+          texte={content.texte}
+          background={content.background}
+          textColor={content.textColor}
+        />
+      ))}
+
       <section id="section-pourquoi" className="scroll-mt-30">
         <div className="container @container w-sm sm:w-md md:w-lg lg:w-4xl mx-auto px-8 mt-5 relative">
           <div className="text-teal-800 border-1 border-gray-200 bg-gray-100/70 rounded-2xl p-5 w-fit mx-auto shadow-2xl">
