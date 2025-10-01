@@ -9,6 +9,27 @@ export default function PourquoiConsulter() {
       textColor: 'text-crusta-500',
       card_num: 1,
     },
+    {
+      image: 'cognition-color.svg',
+      texte: 'Thérapie centrée sur les émotions',
+      background: 'bg-crusta-200',
+      textColor: 'text-crusta-500',
+      card_num: 2,
+    },
+    {
+      image: 'cognition-color.svg',
+      texte: 'Thérapie centrée sur les émotions',
+      background: 'bg-crusta-200',
+      textColor: 'text-crusta-500',
+      card_num: 3,
+    },
+    {
+      image: 'cognition-color.svg',
+      texte: 'Thérapie centrée sur les émotions',
+      background: 'bg-crusta-200',
+      textColor: 'text-crusta-500',
+      card_num: 4,
+    },
   ]
 
   return (
@@ -33,15 +54,17 @@ export default function PourquoiConsulter() {
         </div>
 
 
-        {miniCardsContent.map((content) => (
-          <MiniCards
-            key={'card' + content.card_num}
-            image={content.image}
-            texte={content.texte}
-            background={content.background}
-            textColor={content.textColor}
-          />
-        ))}
+        <div className="grid w-[90%] sm:w-[70%] md:w-[60%] lg:w-[90%] px-1 grid-cols-1 gap-y-15 sm:grid-cols-2 lg:grid-cols-4 sm:gap-15 mx-auto justify-items-center align-items-center">
+          {miniCardsContent.map((content) => (
+            <MiniCards
+              key={'card' + content.card_num}
+              image={content.image}
+              texte={content.texte}
+              background={content.background}
+              textColor={content.textColor}
+            />
+          ))}
+        </div>
 
     </div>
   )

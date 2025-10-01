@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function InfosPratiques() {
   return (
     <div className="w-screen h-fit bg-pale-prim-300 mt-25 pb-3 pt-3">
-      <div className="flex flex-wrap text-pale-prim-900 lg:w-[80%] mx-auto">
+      <div className="flex flex-wrap text-pale-prim-950 lg:w-[80%] mx-auto">
         <div className="flex flex-col mx-auto min-w-80 max-w-96 px-10 md:px-4 relative">
           <div className="w-fit relative mt-4">
             <h2 className="font-light tracking-wide w-fit text-start">
@@ -110,7 +110,7 @@ export default function InfosPratiques() {
       <div className='w-[70%] lg:w-[50%] mx-auto'>
         <hr className="border-pale-prim-100 dark:border-gray-700 w-full mt-10 mb-5" />
       </div>
-      <div className="block text-pale-prim-900 text-center">
+      <div className="block text-pale-prim-950 text-center">
         <p className='font-medium text-xs'>E.I. Céline Castronovo - 2025 Tous droits réservés</p>
         <a href="http://www.atuweb.fr" className="font-medium text-xs">ATU-Web</a>
       </div>

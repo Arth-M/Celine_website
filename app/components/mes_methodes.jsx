@@ -4,31 +4,30 @@ export default function MesMethodes() {
   const miniCardsContent = [
     {
       image: 'cognition-color.svg',
-      texte: 'Thérapie centrée sur les émotions',
-      background: 'bg-crusta-200',
-      textColor: 'text-crusta-500',
+      titre: 'Thérapie centrée cognition',
+      // texte:
+      //   'Mémoire, perception, interactions humain-environnement : certaines difficultés peuvent être liées à nos processus cognitifs courants et nos biais sans que nous nous en apercevions.',
+      background: 'bg-foam-100',
+      textColor: 'text-foam-900',
       card_num: 1,
     },
     {
-      image: 'cognition-color.svg',
-      texte: 'Thérapie centrée sur les émotions',
+      image: 'emotional3.svg',
+      titre: 'Thérapie centrée émotions',
+      // texte:
+      //   "Les émotions fortes que nous vivons dans nos vies ou notre enfance peuvent rester ancrées en nous et nous mettre en difficultés. Certaines situations que nous avons vécues peuvent nécessiter de se centrer sur les émotions passées qui réapparaissent dans certaines situations et nous empêchent d'avancer sereinement",
       background: 'bg-crusta-200',
-      textColor: 'text-crusta-500',
+      textColor: 'text-crusta-900',
       card_num: 2,
     },
     {
-      image: 'cognition-color.svg',
-      texte: 'Thérapie centrée sur les émotions',
-      background: 'bg-crusta-200',
-      textColor: 'text-crusta-500',
+      image: 'counselling.svg',
+      titre: 'Thérapies spécifiques',
+      // texte:
+      //   'EMDR, TCC : des thérapies indiquées dans le traitement de certains troubles spécifiques. Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre de thérapie serait adapté à vos besoins.',
+      background: 'bg-foam-100',
+      textColor: 'text-foam-900',
       card_num: 3,
-    },
-    {
-      image: 'cognition-color.svg',
-      texte: 'Thérapie centrée sur les émotions',
-      background: 'bg-crusta-200',
-      textColor: 'text-crusta-500',
-      card_num: 4,
     },
   ]
 
@@ -65,33 +64,42 @@ export default function MesMethodes() {
           className="mx-auto aspect-1155/678 w-288.75 bg-linear-to-tr from-sky-500 to-[#88ECEB] opacity-70"
         ></div>
       </div>
-        {/* <div className="w-screen  bg-crusta-300 text-crusta-900 p-5 shadow-lg sm:mb-8 my-4">
-          <div className="container @container mx-auto px-8 mt-5 relative">
-            {/* text-orange-400 */}
-            {/* <h2 className="font-semibold tracking-wide">Mes méthodes</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div> */}
 
-        <div className="grid w-[90%] sm:w-[70%] md:w-[60%] lg:w-[90%] px-1 grid-cols-1 gap-y-7 sm:grid-cols-2 lg:grid-cols-4 md:gap-3 mx-auto justify-items-center align-items-center">
-          {miniCardsContent.map((content) => (
-            <MiniCards
-              key={'card' + content.card_num}
-              image={content.image}
-              texte={content.texte}
-              background={content.background}
-              textColor={content.textColor}
-            />
-          ))}
-        </div>
+      <div className="grid mt-20 w-full lg:w-[85%] px-5 grid-cols-1 gap-y-15 sm:grid-cols-3 gap-x-3 mx-auto justify-items-center align-items-center">
+        {miniCardsContent.map((content) => (
+          <MiniCards
+            key={'card' + content.card_num}
+            image={content.image}
+            titre={content.titre}
+            texte={content.texte}
+            background={content.background}
+            textColor={content.textColor}
+            className="my-3"
+          />
+        ))}
+
+      </div>
+      <div className="container @container mx-auto px-8 mt-10 relative">
+        {/* <h2 className="font-semibold tracking-wider @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800">
+          Mes méthodes
+        </h2> */}
+        <p className="font-light font-gray-700 @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800 text-justify">
+          Mémoire, perception, interactions humain-environnement : certaines
+          difficultés peuvent être liées à nos processus cognitifs courants
+          et nos biais sans que nous nous en apercevions.
+          <br />
+          Les émotions fortes que nous vivons dans nos vies ou notre
+          enfance peuvent rester ancrées en nous et nous mettre en difficultés.
+          Certaines situations que nous avons vécues peuvent nécessiter de se centrer
+          sur les émotions passées qui réapparaissent dans certaines situations et nous
+          empêchent d'avancer sereinement.
+          <br />
+          EMDR et TCC sont des thérapies spécifiques indiquées dans le traitement de certains troubles.
+          Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre
+          de thérapie serait adapté à vos besoins.
+        </p>
+      </div>
     </div>
+
   )
 }
