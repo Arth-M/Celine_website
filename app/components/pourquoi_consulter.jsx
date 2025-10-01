@@ -1,34 +1,41 @@
-import MiniCards from './mini_cards'
+import ImageText from "./image_text_element"
 
 export default function PourquoiConsulter() {
   const miniCardsContent = [
     {
-      image: 'cognition-color.svg',
-      texte: 'Thérapie centrée sur les émotions',
-      background: 'bg-crusta-200',
-      textColor: 'text-crusta-500',
+      image: 'critical-thinking.svg',
+      titre: 'Refléchir aux événements de sa vie',
+      background: 'bg-transparent',
+      textColor: 'text-black',
       card_num: 1,
     },
     {
-      image: 'cognition-color.svg',
-      texte: 'Thérapie centrée sur les émotions',
-      background: 'bg-crusta-200',
-      textColor: 'text-crusta-500',
+      image: 'therapy.svg',
+      titre: "Besoin d'accompagnement",
+      background: 'bg-transparent',
+      textColor: 'text-black',
       card_num: 2,
     },
     {
-      image: 'cognition-color.svg',
-      texte: 'Thérapie centrée sur les émotions',
-      background: 'bg-crusta-200',
-      textColor: 'text-crusta-500',
+      image: 'solitude.svg',
+      titre: 'Sentiment de solitude',
+      background: 'bg-transparent',
+      textColor: 'text-black',
       card_num: 3,
     },
     {
-      image: 'cognition-color.svg',
-      texte: 'Thérapie centrée sur les émotions',
-      background: 'bg-crusta-200',
-      textColor: 'text-crusta-500',
+      image: 'helping-hand.svg',
+      titre: "Manque de motivation",
+      background: 'bg-transparent',
+      textColor: 'text-black',
       card_num: 4,
+    },
+    {
+      image: 'objectives.svg',
+      titre: 'Atteindre ses objectifs plus sereinement',
+      background: 'bg-transparent',
+      textColor: 'text-black',
+      card_num: 5,
     },
   ]
 
@@ -54,12 +61,12 @@ export default function PourquoiConsulter() {
         </div>
 
 
-        <div className="grid w-[90%] sm:w-[70%] md:w-[60%] lg:w-[90%] px-1 grid-cols-1 gap-y-15 sm:grid-cols-2 lg:grid-cols-4 sm:gap-15 mx-auto justify-items-center align-items-center">
+        <div className="grid w-[90%] sm:w-[70%] md:w-[60%] lg:w-[90%] px-1 grid-cols-2 gap-y-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-15 mx-auto justify-items-center align-items-center">
           {miniCardsContent.map((content) => (
-            <MiniCards
+            <ImageText
               key={'card' + content.card_num}
               image={content.image}
-              texte={content.texte}
+              titre={content.titre}
               background={content.background}
               textColor={content.textColor}
             />

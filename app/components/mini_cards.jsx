@@ -3,11 +3,11 @@ import Image from 'next/image'
 export default function MiniCards({ image, titre, texte, background, textColor }) {
   return (
     <div
-      className={`${background} ${textColor} w-[270px] sm:w-[200px] md:w-[230px] lg:w-[250px] h-fit flex flex-col rounded-2xl shadow-lg mx-2`}
+      className={`${background} ${textColor} w-[190px] h-fit flex flex-col rounded-2xl shadow-lg mx-2`}
     >
       <Image
         src={`/images/${image}`}
-        alt="Icone de téléphone pour indiquer le numéro de téléphone"
+        alt=""
         width="100"
         height="100"
         loading="lazy"

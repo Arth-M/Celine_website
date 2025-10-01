@@ -4,7 +4,7 @@ import Biography from './components/biography'
 import MesMethodes from './components/mes_methodes'
 import PourquoiConsulter from './components/pourquoi_consulter'
 import Populations from './components/populations'
-import Psychologue from './components/psychologue'
+
 import InfosPratiques from './components/infosPratiques'
 
 export default function Home() {

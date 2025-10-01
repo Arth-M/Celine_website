@@ -4,7 +4,7 @@ export default function MesMethodes() {
   const miniCardsContent = [
     {
       image: 'cognition-color.svg',
-      titre: 'Thérapie centrée cognition',
+      titre: 'Thérapies centrées cognition',
       // texte:
       //   'Mémoire, perception, interactions humain-environnement : certaines difficultés peuvent être liées à nos processus cognitifs courants et nos biais sans que nous nous en apercevions.',
       background: 'bg-foam-100',
@@ -13,7 +13,7 @@ export default function MesMethodes() {
     },
     {
       image: 'emotional3.svg',
-      titre: 'Thérapie centrée émotions',
+      titre: 'Thérapies centrées émotions',
       // texte:
       //   "Les émotions fortes que nous vivons dans nos vies ou notre enfance peuvent rester ancrées en nous et nous mettre en difficultés. Certaines situations que nous avons vécues peuvent nécessiter de se centrer sur les émotions passées qui réapparaissent dans certaines situations et nous empêchent d'avancer sereinement",
       background: 'bg-crusta-200',
@@ -35,7 +35,7 @@ export default function MesMethodes() {
     <div className="relative w-screen">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 -left-220 -z-10  md:-left-50 transform-gpu overflow-hidden px-36 blur-3xl"
+        className="absolute inset-x-0 -left-240 -top-20 -z-10  md:-left-20 md:-top-50 transform-gpu overflow-hidden px-36 blur-3xl"
       >
         <div
           style={{
@@ -65,7 +65,7 @@ export default function MesMethodes() {
         ></div>
       </div>
 
-      <div className="grid mt-20 w-full lg:w-[85%] px-5 grid-cols-1 gap-y-15 sm:grid-cols-3 gap-x-3 mx-auto justify-items-center align-items-center">
+      <div className="grid mt-10 md:mt-20 w-full lg:w-[70%] px-5 grid-cols-1 gap-y-15 sm:grid-cols-3 gap-x-3 mx-auto justify-items-center align-items-center">
         {miniCardsContent.map((content) => (
           <MiniCards
             key={'card' + content.card_num}
@@ -89,10 +89,9 @@ export default function MesMethodes() {
           et nos biais sans que nous nous en apercevions.
           <br />
           Les émotions fortes que nous vivons dans nos vies ou notre
-          enfance peuvent rester ancrées en nous et nous mettre en difficultés.
+          enfance peuvent rester ancrées en nous et nous mettre en difficulté.
           Certaines situations que nous avons vécues peuvent nécessiter de se centrer
-          sur les émotions passées qui réapparaissent dans certaines situations et nous
-          empêchent d'avancer sereinement.
+          sur les émotions passées qui nous empêchent d'avancer sereinement.
           <br />
           EMDR et TCC sont des thérapies spécifiques indiquées dans le traitement de certains troubles.
           Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre
