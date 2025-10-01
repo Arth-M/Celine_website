@@ -4,7 +4,7 @@ export default function InfosPratiques() {
   return (
     <div className="w-screen h-fit bg-pale-prim-300 mt-25 pb-3 pt-3">
       <div className="flex flex-wrap text-pale-prim-900 lg:w-[80%] mx-auto">
-        <div className="flex flex-col mx-auto min-w-80 max-w-96 px-4 relative">
+        <div className="flex flex-col mx-auto min-w-80 max-w-96 px-10 md:px-4 relative">
           <div className="w-fit relative mt-4">
             <h2 className="font-light tracking-wide w-fit text-start">
               Informations pratiques
@@ -70,21 +70,31 @@ export default function InfosPratiques() {
           </div>
 
           {/* tarifs */}
-          <div className="h-fit mb-5">
+          <div className="h-fit mb-3">
             <div className="w-fit relative">
               <hr className="border-pale-prim-100 mx-auto dark:border-gray-700 w-full my-5" />
               <p className="text-start text-sm/6">
                 Consultation d'une heure : 60 € TTC
               </p>
+
+            {/* <div className="w-[50%] mx-auto px-8 relative">
+              <hr className="border-pale-prim-100 mx-auto dark:border-gray-700 w-full my-1" />
+            </div> */}
             </div>
-            <p className="text-start text-sm/6">
+            <p className="text-start text-sm/6 mt-2">
               Dispositif Santé Psy Étudiants - 45 min : Nécessité de présenter un
               numéro INE
             </p>
           </div>
         </div>
+
+        <div className="w-[50%] mx-auto px-8 relative md:hidden">
+          <hr className="border-pale-prim-100 mx-auto dark:border-gray-700 w-full my-3" />
+        </div>
+
+
         {/* google map */}
-        <div className="mx-auto my-auto flex justify-center align-center h-full w-fit">
+        <div className="mx-auto my-4 md:my-auto flex justify-center align-center h-full w-fit">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.2971325847216!2d3.8646004118297057!3d43.6003545709841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6afd200cec417%3A0x176c4f90a36d217f!2sC%C3%A9line%20Castronovo!5e0!3m2!1sfr!2sfr!4v1758445164370!5m2!1sfr!2sfr"
             width="400"
