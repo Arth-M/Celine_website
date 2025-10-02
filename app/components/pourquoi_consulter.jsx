@@ -40,7 +40,20 @@ export default function PourquoiConsulter() {
   ]
 
   return (
-    <div className="relative w-screen">
+    <div className="relative w-screen mt-50">
+
+
+        <div className="grid w-[90%] sm:w-[70%] md:w-[60%] lg:w-[40%] px-1 grid-cols-2 gap-y-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-15 mx-auto justify-items-center align-items-center">
+          {miniCardsContent.map((content) => (
+            <ImageText
+              key={'card' + content.card_num}
+              image={content.image}
+              titre={content.titre}
+              background={content.background}
+              textColor={content.textColor}
+            />
+          ))}
+        </div>
 
         <div className="container @container mx-auto px-8 mt-5 relative">
           <div className="text-teal-800 border-1 border-gray-200 bg-gray-100/70 rounded-2xl p-5 w-fit mx-auto shadow-2xl">
@@ -58,19 +71,6 @@ export default function PourquoiConsulter() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-        </div>
-
-
-        <div className="grid w-[90%] sm:w-[70%] md:w-[60%] lg:w-[90%] px-1 grid-cols-2 gap-y-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-15 mx-auto justify-items-center align-items-center">
-          {miniCardsContent.map((content) => (
-            <ImageText
-              key={'card' + content.card_num}
-              image={content.image}
-              titre={content.titre}
-              background={content.background}
-              textColor={content.textColor}
-            />
-          ))}
         </div>
 
     </div>

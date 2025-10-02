@@ -22,7 +22,7 @@ export default function MesMethodes() {
     },
     {
       image: 'counselling.svg',
-      titre: 'Thérapies spécifiques',
+      titre: `TCC <br /> EMDR`,
       // texte:
       //   'EMDR, TCC : des thérapies indiquées dans le traitement de certains troubles spécifiques. Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre de thérapie serait adapté à vos besoins.',
       background: 'bg-foam-100',
@@ -35,7 +35,7 @@ export default function MesMethodes() {
     <div className="relative w-screen">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 -left-240 -top-20 -z-10  md:-left-20 md:-top-50 transform-gpu overflow-hidden px-36 blur-3xl"
+        className="absolute inset-x-0 -left-240 -top-20 -z-10  sm:-left-70 sm:top-70 md:-left-20 md:top-70 transform-gpu overflow-hidden px-36 blur-3xl"
       >
         <div
           style={{
@@ -54,7 +54,7 @@ export default function MesMethodes() {
 
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 -left-50 -z-10 transform-gpu overflow-hidden px-36 blur-3xl md:invisible"
+        className="absolute inset-x-0 -left-50 -z-10 transform-gpu overflow-hidden px-36 blur-3xl sm:invisible"
       >
         <div
           style={{
@@ -68,10 +68,9 @@ export default function MesMethodes() {
       <div className="grid mt-10 md:mt-20 w-full lg:w-[70%] px-5 grid-cols-1 gap-y-15 sm:grid-cols-3 gap-x-3 mx-auto justify-items-center align-items-center">
         {miniCardsContent.map((content) => (
           <MiniCards
-            key={'card' + content.card_num}
+            key={'difficultes' + content.card_num}
             image={content.image}
             titre={content.titre}
-            texte={content.texte}
             background={content.background}
             textColor={content.textColor}
             className="my-3"

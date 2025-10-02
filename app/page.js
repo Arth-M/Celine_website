@@ -27,7 +27,7 @@ export default function Home() {
         <MesMethodes />
       </section>
 
-      <div className="container @container mx-auto px-8 mt-45 md:mt-30 lg:mt-20 relative">
+      <div className="hidden container @container mx-auto px-8 mt-45 md:mt-30 lg:mt-20 relative">
         <hr className="border-gray-200 mx-auto dark:border-gray-700 w-3xs md:w-xs lg:w-md my-12" />
       </div>
 

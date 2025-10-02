@@ -17,9 +17,6 @@ export default function ImageText({ image, titre, texte, background, textColor }
       <p className="text-center text-wrap px-2 font-light text-xs tracking-tight">
         {titre}
       </p>
-      {texte ? (<p className="text-center text-wrap px-2 font-light my-5">
-        {texte}
-      </p>) : (<div className="hidden"></div>)}
 
     </div>
   )
