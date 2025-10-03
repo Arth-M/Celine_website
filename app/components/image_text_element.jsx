@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function ImageText({ image, titre, texte, background, textColor }) {
   return (
     <div
-      className={`${background} ${textColor} w-fit h-fit flex flex-col rounded-2xl mx-2`}
+      className={`${background} ${textColor} w-[80px] h-fit flex flex-col rounded-2xl mx-2`}
     >
       <Image
         src={`/images/${image}`}
@@ -14,9 +14,10 @@ export default function ImageText({ image, titre, texte, background, textColor }
         priority={false}
         className='object-scale-down  text-start col-span mx-auto mb-1'
       />
-      <p className="text-center text-wrap px-2 font-light text-xs tracking-tight">
+      <p className="text-center text-wrap font-light text-xs tracking-tight">
         {titre}
       </p>
+
 
     </div>
   )

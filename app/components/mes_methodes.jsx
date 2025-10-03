@@ -12,21 +12,21 @@ export default function MesMethodes() {
       card_num: 1,
     },
     {
-      image: 'emotional3.svg',
-      titre: 'Thérapies centrées émotions',
+      image: 'counselling.svg',
+      titre: `TCC - EMDR`,
       // texte:
-      //   "Les émotions fortes que nous vivons dans nos vies ou notre enfance peuvent rester ancrées en nous et nous mettre en difficultés. Certaines situations que nous avons vécues peuvent nécessiter de se centrer sur les émotions passées qui réapparaissent dans certaines situations et nous empêchent d'avancer sereinement",
+      //   'EMDR, TCC : des thérapies indiquées dans le traitement de certains troubles spécifiques. Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre de thérapie serait adapté à vos besoins.',
       background: 'bg-crusta-200',
       textColor: 'text-crusta-900',
       card_num: 2,
     },
     {
-      image: 'counselling.svg',
-      titre: `TCC <br /> EMDR`,
-      // texte:
-      //   'EMDR, TCC : des thérapies indiquées dans le traitement de certains troubles spécifiques. Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre de thérapie serait adapté à vos besoins.',
+      image: 'emotional3.svg',
+      titre: 'Thérapies centrées émotions',
       background: 'bg-foam-100',
       textColor: 'text-foam-900',
+      // texte:
+      //   "Les émotions fortes que nous vivons dans nos vies ou notre enfance peuvent rester ancrées en nous et nous mettre en difficultés. Certaines situations que nous avons vécues peuvent nécessiter de se centrer sur les émotions passées qui réapparaissent dans certaines situations et nous empêchent d'avancer sereinement",
       card_num: 3,
     },
   ]
