@@ -1,10 +1,23 @@
 import Image from 'next/image'
 
-export default function MiniCards({ image, titre, texte, background, textColor }) {
+export default function MiniCards({ image, titre, texte, background, textColor, imageClass, rotate }) {
   return (
     <div
-      className={`${background} ${textColor} w-[190px] h-fit flex flex-col rounded-2xl shadow-lg mx-2`}
+      className={` ${textColor} relative w-[190px] h-fit flex flex-col mx-2`}
     >
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 250"
+        className={`absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-[10%] w-[250px] h-[180px] z-0 ${rotate}`}
+      >
+        <path d="
+          M150,30
+          C190,0 240,60 260,120
+          C270,170 210,230 150,230
+          C90,230 40,190 40,130
+          C40,80 100,60 150,30
+          Z" fill={`${background}`}/>
+      </svg>
       <Image
         src={`/images/${image}`}
         alt=""
@@ -12,9 +25,12 @@ export default function MiniCards({ image, titre, texte, background, textColor }
         height="100"
         loading="lazy"
         priority={false}
-        className='object-scale-down  text-start col-span mx-auto mb-5 mt-2'
+        className={`object-scale-down text-start col-span z-10 mx-auto mb-5 mt-2 ${imageClass}`}
       />
-      <p className="text-center text-wrap px-2 font-semibold tracking-wide mb-5">
+      {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 260" width="200" height="180"> */}
+
+
+      <p className="text-center text-wrap px-2 font-light tracking-wide mb-5">
         {titre}
       </p>
       {texte ? (<p className="text-center text-wrap px-2 font-light my-5">

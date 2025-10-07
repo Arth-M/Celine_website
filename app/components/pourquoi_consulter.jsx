@@ -69,7 +69,7 @@ export default function PourquoiConsulter() {
           ))}
         </div>
         { toAdd ?
-          <div className="mx-auto mt-3 flex w-[90%] sm:w-[70%] md:w-[60%] lg:w-[40%] px-1 gap-x-10 justify-center align-items-center">
+          <div className="mx-auto mt-7 sm:mt-5 flex w-[90%] sm:w-[70%] md:w-[60%] lg:w-[40%] px-1 gap-x-8 sm:gap-x-20 md:gap-x-25 justify-center align-items-center">
               {toAdd.map((content) => (
               <ImageText
                 key={'card' + content.card_num}
@@ -83,16 +83,18 @@ export default function PourquoiConsulter() {
           : <div className="hidden"></div>
         }
         <div className="container @container mx-auto px-8 mt-5 relative">
-          <div className="text-teal-800 border-1 border-gray-200 bg-gray-100/70 rounded-2xl p-5 w-fit mx-auto shadow-2xl">
+          {/* <div className="text-teal-800 border-1 border-gray-200 bg-gray-100/70 rounded-2xl p-5 w-fit mx-auto shadow-2xl"> */}
+          <div className="text-teal-800 p-5 w-fit mx-auto">
             <p className="@sm:w-xs @md:w-sm @lg:w-md @lg:mx-auto">
               {/* text-[#88ECEB] */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Texte copié sur d'autres sites ... <br/>
+              Habituellement, on consulte un psy quand « ça ne va pas ».
+              La démarche peut être mûrement réfléchie, mais il arrive aussi
+              que le contexte soit oppressant...
+              Quand votre couple rencontre des difficultés...
+              Lorsque l'enfant arrive ou se fait attendre...
+              Votre enfant a des difficultés ....
+
             </p>
           </div>
         </div>

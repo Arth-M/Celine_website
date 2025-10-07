@@ -3,31 +3,38 @@ import MiniCards from './mini_cards'
 export default function MesMethodes() {
   const miniCardsContent = [
     {
-      image: 'cognition-color.svg',
-      titre: 'Thérapies centrées cognition',
+      image: 'emotions4.svg',
+      titre: 'Thérapies centrées émotions',
+      background: '#f9ceaf',
+      rotate: 'rotate-45',
+      // background: 'bg-crusta-200 border border-crusta-300',
+      textColor: 'text-crusta-950',
+      imageClass: 'scale-x-[-1]',
       // texte:
-      //   'Mémoire, perception, interactions humain-environnement : certaines difficultés peuvent être liées à nos processus cognitifs courants et nos biais sans que nous nous en apercevions.',
-      background: 'bg-foam-100',
-      textColor: 'text-foam-900',
-      card_num: 1,
+      //   "Les émotions fortes que nous vivons dans nos vies ou notre enfance peuvent rester ancrées en nous et nous mettre en difficultés. Certaines situations que nous avons vécues peuvent nécessiter de se centrer sur les émotions passées qui réapparaissent dans certaines situations et nous empêchent d'avancer sereinement",
+      card_num: 3,
     },
     {
       image: 'counselling.svg',
       titre: `TCC - EMDR`,
+      background: '#b6eaeb',
+      // background: 'bg-foam-100 border border-foam-200',
+      textColor: 'text-foam-900',
+      rotate: '',
       // texte:
       //   'EMDR, TCC : des thérapies indiquées dans le traitement de certains troubles spécifiques. Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre de thérapie serait adapté à vos besoins.',
-      background: 'bg-crusta-200',
-      textColor: 'text-crusta-900',
       card_num: 2,
     },
     {
-      image: 'emotional3.svg',
-      titre: 'Thérapies centrées émotions',
-      background: 'bg-foam-100',
-      textColor: 'text-foam-900',
+      image: 'cognition-color.svg',
+      titre: 'Thérapies centrées cognition',
       // texte:
-      //   "Les émotions fortes que nous vivons dans nos vies ou notre enfance peuvent rester ancrées en nous et nous mettre en difficultés. Certaines situations que nous avons vécues peuvent nécessiter de se centrer sur les émotions passées qui réapparaissent dans certaines situations et nous empêchent d'avancer sereinement",
-      card_num: 3,
+      //   'Mémoire, perception, interactions humain-environnement : certaines difficultés peuvent être liées à nos processus cognitifs courants et nos biais sans que nous nous en apercevions.',
+      background: '#f9ceaf',
+      // background: 'bg-crusta-200 border border-crusta-300',
+      textColor: 'text-crusta-950',
+      rotate: 'rotate-180',
+      card_num: 1,
     },
   ]
 
@@ -73,6 +80,8 @@ export default function MesMethodes() {
             titre={content.titre}
             background={content.background}
             textColor={content.textColor}
+            imageClass={content.imageClass}
+            rotate={content.rotate}
             className="my-3"
           />
         ))}

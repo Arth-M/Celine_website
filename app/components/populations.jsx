@@ -3,8 +3,8 @@ export default function Populations() {
   return (
     <div className="relative">
 
-        <div className="w-screen bg-[#CEF2F2]/98 text-teal-700 p-5 shadow-lg sm:mb-8 my-4">
-          <div className="container @container mx-auto px-8 mt-5 relative">
+        <div className="w-screen p-5 sm:mb-8 my-4">
+          <div className="container @container mx-auto px-8 mt-5 relative text-teal-700 bg-[#CEF2F2]/98 shadow-lg rounded-lg">
             {/* text-green-600 */}
             <h2 className="font-semibold tracking-wide">Pour qui ?</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -19,3 +19,4 @@ export default function Populations() {
     </div>
   )
 }
+
