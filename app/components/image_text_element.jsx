@@ -8,13 +8,13 @@ export default function ImageText({ image, titre, texte, background, textColor }
       <Image
         src={`/images/${image}`}
         alt="Icone de téléphone pour indiquer le numéro de téléphone"
-        width="40"
-        height="40"
+        width="50"
+        height="50"
         loading="lazy"
         priority={false}
         className='object-scale-down  text-start col-span mx-auto mb-1'
       />
-      <p className="text-center text-wrap font-light text-xs tracking-tight">
+      <p className="text-center text-wrap font-light text-sm tracking-tight">
         {titre}
       </p>
 

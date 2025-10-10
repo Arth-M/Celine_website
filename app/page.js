@@ -17,7 +17,7 @@ export default function Home() {
 
       <section
         id="section-biography"
-        className="flex-initial lg:scroll-mt-15 -scroll-mt-10"
+        className="flex-initial lg:scroll-mt-15 -scroll-mt-18"
         data-navbarneeded
       >
         <Biography />
@@ -31,7 +31,7 @@ export default function Home() {
         <hr className="border-gray-200 mx-auto dark:border-gray-700 w-3xs md:w-xs lg:w-md my-12" />
       </div>
 
-      <section id="section-pourquoi" className="flex-initial scroll-mt-30">
+      <section id="section-pourquoi" className="flex-initial scroll-mt-10">
         <PourquoiConsulter />
       </section>
 

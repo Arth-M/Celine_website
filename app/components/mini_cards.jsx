@@ -1,14 +1,14 @@
 import Image from 'next/image'
 
-export default function MiniCards({ image, titre, texte, background, textColor, imageClass, rotate }) {
+export default function MiniCards({ image, titre, texte, background, textProperty, imageClass, rotate }) {
   return (
     <div
-      className={` ${textColor} relative w-[190px] h-fit flex flex-col mx-2`}
+      className={`  relative w-[190px] h-fit flex flex-col mx-2 place-center`}
     >
         <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 320 250"
-        className={`absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-[10%] w-[250px] h-[180px] z-0 ${rotate}`}
+        className={`absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-[10%] w-[250px] h-[180px] z-0 ${rotate} animated-svg`}
       >
         <path d="
           M150,30
@@ -30,7 +30,7 @@ export default function MiniCards({ image, titre, texte, background, textColor, 
       {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 260" width="200" height="180"> */}
 
 
-      <p className="text-center text-wrap px-2 font-light tracking-wide mb-5">
+      <p className={`${textProperty} text-center text-lg text-teal-800 text-wrap px-2 font-light tracking-wide mt-2 sm:mt-1 h-[48px]`}>
         {titre}
       </p>
       {texte ? (<p className="text-center text-wrap px-2 font-light my-5">

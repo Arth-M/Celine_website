@@ -1,6 +1,56 @@
+'use client';
 import MiniCards from './mini_cards'
+import { useState, useEffect, useRef } from 'react'
 
 export default function MesMethodes() {
+  const [methodeVisible, setMethodeVisible] = useState(false)
+  const hasRotated = useRef(false)
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target.id === 'section-methodes') {
+            const wasVisible = methodeVisible
+            const nowVisible = entry.isIntersecting
+            setMethodeVisible(nowVisible)
+
+            if (!hasRotated.current && !wasVisible && nowVisible) {
+              const animatedSvgs = document.querySelectorAll(".animated-svg")
+              if (animatedSvgs.length>0) {
+                animatedSvgs.forEach(svg => {
+                svg.classList.add('rotate-360')
+              })
+                setTimeout(() => {
+                  animatedSvgs.forEach(svg => {
+                svg.classList.remove('rotate-360')
+              })
+                }, 10000)
+                hasRotated.current = true
+              }
+            }
+          }
+        })
+      },
+      {
+        threshold: 0.7,
+        rootMargin: '0px',
+      }
+    )
+
+    const firstSection = document.querySelector('#section-methodes')
+    if (firstSection) {
+      observer.observe(firstSection)
+    }
+
+    return () => {
+      if (firstSection) observer.unobserve(firstSection)
+      observer.disconnect()
+    }
+  }, [methodeVisible])
+
+
   const miniCardsContent = [
     {
       image: 'emotions4.svg',
@@ -8,7 +58,7 @@ export default function MesMethodes() {
       background: '#f9ceaf',
       rotate: 'rotate-45',
       // background: 'bg-crusta-200 border border-crusta-300',
-      textColor: 'text-crusta-950',
+      textProperty: 'text-crusta-950',
       imageClass: 'scale-x-[-1]',
       // texte:
       //   "Les émotions fortes que nous vivons dans nos vies ou notre enfance peuvent rester ancrées en nous et nous mettre en difficultés. Certaines situations que nous avons vécues peuvent nécessiter de se centrer sur les émotions passées qui réapparaissent dans certaines situations et nous empêchent d'avancer sereinement",
@@ -19,7 +69,7 @@ export default function MesMethodes() {
       titre: `TCC - EMDR`,
       background: '#b6eaeb',
       // background: 'bg-foam-100 border border-foam-200',
-      textColor: 'text-foam-900',
+      textProperty: 'pt-3',
       rotate: '',
       // texte:
       //   'EMDR, TCC : des thérapies indiquées dans le traitement de certains troubles spécifiques. Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre de thérapie serait adapté à vos besoins.',
@@ -32,7 +82,7 @@ export default function MesMethodes() {
       //   'Mémoire, perception, interactions humain-environnement : certaines difficultés peuvent être liées à nos processus cognitifs courants et nos biais sans que nous nous en apercevions.',
       background: '#f9ceaf',
       // background: 'bg-crusta-200 border border-crusta-300',
-      textColor: 'text-crusta-950',
+      textProperty: '',
       rotate: 'rotate-180',
       card_num: 1,
     },
@@ -79,7 +129,7 @@ export default function MesMethodes() {
             image={content.image}
             titre={content.titre}
             background={content.background}
-            textColor={content.textColor}
+            textProperty={content.textProperty}
             imageClass={content.imageClass}
             rotate={content.rotate}
             className="my-3"
@@ -91,7 +141,7 @@ export default function MesMethodes() {
         {/* <h2 className="font-semibold tracking-wider @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800">
           Mes méthodes
         </h2> */}
-        <p className="font-light font-gray-700 @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800 text-justify">
+        <p className="font-light @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800 text-justify">
           Mémoire, perception, interactions humain-environnement : certaines
           difficultés peuvent être liées à nos processus cognitifs courants
           et nos biais sans que nous nous en apercevions.

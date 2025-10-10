@@ -25,7 +25,7 @@ export default function PourquoiConsulter() {
     },
     {
       image: 'objectives.svg',
-      titre: 'Atteindre ses objectifs plus sereinement',
+      titre: 'Atteindre ses objectifs sereinement',
       background: 'bg-transparent',
       textColor: 'text-black',
       card_num: 5,
@@ -51,7 +51,7 @@ export default function PourquoiConsulter() {
     <div className="relative w-screen mt-30">
         <div className="container @container mx-auto px-8 mt-5 relative">
           <div className="text-teal-800 bg-transparent w-fit mx-auto mb-7">
-            <h2 className="font-semibold tracking-wide @lg:text-center mx-auto">
+            <h2 className="font-semibold text-center mb-2 text-lg tracking-wider @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800">
               Pourquoi consulter ?
             </h2>
           </div>

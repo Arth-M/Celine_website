@@ -2,35 +2,39 @@ import Image from 'next/image'
 
 export default function InfosPratiques() {
   return (
-    <div className="w-screen h-fit bg-pale-prim-300 mt-25 pb-3 pt-3">
+    <div className="w-screen h-fit bg-pale-prim-500 z-0 mt-25 pb-3 pt-8">
       <div className="flex flex-wrap text-pale-prim-950 lg:w-[80%] mx-auto">
         <div className="flex flex-col mx-auto min-w-80 max-w-96 px-10 md:px-4 relative">
           <div className="w-fit relative mt-4">
-            <h2 className="font-light tracking-wide w-fit text-start">
+            <h2 className="font-light text-lg tracking-wide w-fit text-start">
               Informations pratiques
             </h2>
-            <hr className="border-pale-prim-100 mx-auto dark:border-gray-700 w-full my-5" />
+            <hr className="border-pale-prim-400 mx-auto dark:border-gray-700 w-full my-5" />
           </div>
           {/* horaires */}
+          <p className='my-2'>Prise de rendez-vous sur
+          <a href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
+              rel="keep-params" target='_blank' className="text-blue-700"> doctolib</a></p>
           <div className="flex flex-nowrap gap-x-4 my-2">
             <div className="flex gap-x-2 items-center text-sm/6">
               <Image
                 src="/images/clock2.svg"
                 alt="Icone d'horloge pour décrire les horaires"
-                width="20"
-                height="20"
+                width="25"
+                height="25"
                 loading='lazy'
                 priority={false}
                 className="object-scale-down text-start col-span"
               />
             </div>
-            <div className="grid grid-cols-2 w-fit gap-x-2 gap-y-1 h-fit justify-center">
-              <p className="text-sm/6 w-fit">Lundi et Jeudi</p>
-              <p className="text-sm/6 w-fit">10h - 20h</p>
-              <p className="text-sm/6 w-fit">Mardi et Vendredi </p>
-              <p className="text-sm/6 w-fit">10h - 18h</p>
+            <div className="grid grid-cols-2 ml-1 w-fit gap-x-4 gap-y-1 h-fit justify-center">
+              <p className="text-md/6 w-fit">Lundi et Jeudi</p>
+              <p className="text-md/6 w-fit my-auto">10h - 20h</p>
+              <p className="text-md/6 w-fit">Mardi et Vendredi </p>
+              <p className="text-md/6 w-fit my-auto">10h - 18h</p>
             </div>
           </div>
+
 
           {/* mail */}
           <div className="flex flex-nowrap gap-x-4 my-2">
@@ -38,8 +42,8 @@ export default function InfosPratiques() {
               <Image
                 src="/images/email2.svg"
                 alt="Icone de mail pour indiquer l'adresse mail"
-                width="20"
-                height="20"
+                width="25"
+                height="25"
                 loading='lazy'
                 priority={false}
                 className="object-scale-down text-start col-span"
@@ -47,7 +51,7 @@ export default function InfosPratiques() {
             </div>
             <a
               href="mailto:c.castronovo.34@gmail.com"
-              className="text-start text-sm/6"
+              className="text-start text-md/6"
             >
               c.castronovo.34@gmail.com
             </a>
@@ -59,21 +63,21 @@ export default function InfosPratiques() {
               <Image
                 src="/images/iphone.svg"
                 alt="Icone de téléphone pour indiquer le numéro de téléphone"
-                width="20"
-                height="20"
+                width="25"
+                height="25"
                 loading='lazy'
                 priority={false}
                 className="object-scale-down text-start col-span"
               />
             </div>
-            <p className="text-start text-sm/6 select-all">+33 615435199</p>
+            <p className="text-start text-md/6 select-all">+33 633305363</p>
           </div>
 
           {/* tarifs */}
           <div className="h-fit mb-3">
             <div className="w-fit relative">
-              <hr className="border-pale-prim-100 mx-auto dark:border-gray-700 w-full my-5" />
-              <p className="text-start text-sm/6">
+              <hr className="border-pale-prim-400 mx-auto dark:border-gray-700 w-full my-5" />
+              <p className="text-start text-md">
                 Consultation d'une heure : 60 € TTC
               </p>
 
@@ -81,7 +85,7 @@ export default function InfosPratiques() {
               <hr className="border-pale-prim-100 mx-auto dark:border-gray-700 w-full my-1" />
             </div> */}
             </div>
-            <p className="text-start text-sm/6 mt-2">
+            <p className="text-start text-md mt-2">
               Dispositif Santé Psy Étudiants - 45 min : Nécessité de présenter un
               numéro INE
             </p>
@@ -107,8 +111,10 @@ export default function InfosPratiques() {
           ></iframe>
         </div>
       </div>
+
+
       <div className='w-[70%] lg:w-[50%] mx-auto'>
-        <hr className="border-pale-prim-100 dark:border-gray-700 w-full mt-10 mb-5" />
+        <hr className="border-pale-prim-400 dark:border-gray-700 w-full mt-10 mb-5" />
       </div>
       <div className="block text-pale-prim-950 text-center">
         <p className='font-medium text-xs'>E.I. Céline Castronovo - 2025 Tous droits réservés</p>

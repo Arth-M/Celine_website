@@ -41,3 +41,7 @@
 
 
 }
+
+.rotate-360 {
+  transform: translate(-50%, -10%) rotate(360deg);
+}

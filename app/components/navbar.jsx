@@ -6,13 +6,29 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const menuRef = useRef(null)
+  const hasPulsed = useRef(false)
 
-  useEffect(() => {
+
+ useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.target.id === 'section-accueil') {
-            setIsVisible(!entry.isIntersecting)
+            const wasVisible = isVisible
+            const nowVisible = !entry.isIntersecting
+            setIsVisible(nowVisible)
+
+            // Only pulse once when visibility state changes for the first time
+            if (!hasPulsed.current && wasVisible !== nowVisible) {
+              const doctolibButton = document.querySelector("#doctolibButton")
+              if (doctolibButton) {
+                doctolibButton.classList.add('animate-bounce')
+                setTimeout(() => {
+                  doctolibButton.classList.remove('animate-bounce')
+                }, 1500)
+                hasPulsed.current = true // Mark as pulsed permanently
+              }
+            }
           }
         })
       },
@@ -31,7 +47,7 @@ export default function Navbar() {
       if (firstSection) observer.unobserve(firstSection)
       observer.disconnect()
     }
-  }, [])
+  }, [isVisible])
 
   // Handle clicking outside to close menu
   useEffect(() => {
@@ -70,7 +86,7 @@ export default function Navbar() {
           </div> */}
 
 
-          <div className="inset-y-0 left-0 flex items-center">
+          <div className="inset-y-0 left-0 flex items-center" id="doctolibButton">
             <span className="sr-only">Rendez-vous Doctolib</span>
             <a
               href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
@@ -118,20 +134,20 @@ export default function Navbar() {
                 Qui suis-je ?
               </a>
               <a
-                href="#section-pourquoi"
-                className={`rounded-md font-light text-sm hover:bg-white/5 ${
-                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
-                }`}
-              >
-                Pourquoi consulter ?
-              </a>
-              <a
                 href="#section-methodes"
                 className={`rounded-md font-light text-sm hover:bg-white/5 ${
                   isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                 }`}
               >
                 Mes méthodes
+              </a>
+              <a
+                href="#section-pourquoi"
+                className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                }`}
+              >
+                Pourquoi consulter ?
               </a>
 
               <a
@@ -200,13 +216,6 @@ export default function Navbar() {
             Qui suis-je ?
           </a>
           <a
-            href="#section-pourquoi"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Pourquoi consulter ?
-          </a>
-          <a
             href="#section-methodes"
             className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
@@ -214,7 +223,14 @@ export default function Navbar() {
             Mes méthodes
           </a>
           <a
-            href="#section-populationss"
+            href="#section-pourquoi"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Pourquoi consulter ?
+          </a>
+          <a
+            href="#section-populations"
             className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
