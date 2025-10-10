@@ -4,28 +4,28 @@ export default function Populations() {
   const miniCardsContent = [
     {
     image: 'child.svg',
-    titre: 'Enfants',
+    titre: 'Enfant',
     background: 'bg-transparent',
       textColor: 'text-teal-900',
       card_num: 1,
     },
     {
     image: 'teenagers2.svg',
-    titre: 'Adolescents',
+    titre: 'Adolescent',
     background: 'bg-transparent',
       textColor: 'text-teal-900',
       card_num: 2,
     },
     {
     image: 'students3.svg',
-    titre: 'Étudiants',
+    titre: 'Étudiant',
     background: 'bg-transparent',
       textColor: 'text-teal-900',
       card_num: 3,
     },
     {
     image: 'adults3.svg',
-    titre: 'Adultes',
+    titre: 'Adulte',
     background: 'bg-transparent',
       textColor: 'text-teal-900',
       card_num: 4,
