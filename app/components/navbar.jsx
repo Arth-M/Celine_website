@@ -10,6 +10,7 @@ export default function Navbar() {
 
 
  useEffect(() => {
+    const isMobile = window.innerWidth < 1000; // you can tweak this breakpoint
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -33,8 +34,8 @@ export default function Navbar() {
         })
       },
       {
-        threshold: 0.7,
-        rootMargin: '0px',
+        threshold: isMobile ? 0.5 : 0.7,
+        rootMargin: isMobile ? '0px 0px 0% 0px' : '0px 0px 0% 0px'
       }
     )
 

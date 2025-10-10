@@ -42,6 +42,38 @@
 
 }
 
-.rotate-360 {
-  transform: translate(-50%, -10%) rotate(360deg);
+.rotate90 {
+  animation: rotate90 2s ease-in-out forwards;
+
+}
+@keyframes rotate90 {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(35deg);
+  }
+  60% {
+    transform: rotate(-10deg)
+  }
+  80% {
+    transform: rotate(10deg)
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

@@ -117,7 +117,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className="m-0 p-0 w-screen h-screen relative bg-gray-100">
+      <body className="m-0 p-0 w-screen h-screen relative bg-teal-50">
         {children}
       </body>
     </html>
