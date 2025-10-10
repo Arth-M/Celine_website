@@ -77,11 +77,11 @@ export default function PourquoiConsulter() {
                         element.classList.remove('invisible')
                         element.classList.add('fade-in')
                       });
-                    }, 600);
+                    }, 500);
                     setTimeout(() => {
                       texte.classList.remove('invisible')
                       texte.classList.add('fade-in')
-                  }, 1200);
+                  }, 1000);
 
 
                 //   setTimeout(() => {
@@ -113,7 +113,7 @@ export default function PourquoiConsulter() {
     }, [methodeVisible])
 
   return (
-    <div className="relative w-screen mt-30">
+    <div className="relative w-screen mt-35">
         <div className="container @container mx-auto px-8 mt-5 relative">
           <div className="text-teal-800 bg-transparent w-fit mx-auto mb-7">
             <h2 id ="pk-consulter-titre" className="invisible font-semibold text-center mb-2 text-lg tracking-wider @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800">
@@ -137,7 +137,7 @@ export default function PourquoiConsulter() {
           <div className="pk-consulter-images invisible mx-auto mt-7 sm:mt-5 flex w-[90%] sm:w-[70%] md:w-[60%] lg:w-[40%] px-1 gap-x-8 sm:gap-x-20 md:gap-x-25 justify-center align-items-center">
               {toAdd.map((content) => (
               <ImageText
-                key={'card' + content.card_num}
+                key={'cardPourquoi' + content.card_num}
                 image={content.image}
                 titre={content.titre}
                 background={content.background}

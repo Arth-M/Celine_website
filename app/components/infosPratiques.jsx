@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function InfosPratiques() {
   return (
-    <div className="w-screen h-fit bg-pale-prim-500 z-0 mt-25 pb-3 pt-8">
+    <div className="w-screen h-fit bg-pale-prim-500 z-0 mt-35 lg:mt-50 pb-3 pt-8">
       <div className="flex flex-wrap text-pale-prim-950 lg:w-[80%] mx-auto">
         <div className="flex flex-col mx-auto min-w-80 max-w-96 px-10 md:px-4 relative">
           <div className="w-fit relative mt-4">

@@ -1,6 +1,6 @@
 export default function Biography() {
   return (
-    <div className="container @container mx-auto px-8 mt-49 mb-20 md:my-30 lg:my-20 relative">
+    <div className="container @container mx-auto px-8 mt-55 mb-20 md:mt-35 lg:my-25 relative">
       <h2 className="font-semibold mb-2 text-lg tracking-wider @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800">
         Qui suis-je ?
       </h2>

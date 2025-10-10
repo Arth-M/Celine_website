@@ -98,7 +98,7 @@ export default function MesMethodes() {
   ]
 
   return (
-    <div className="relative w-screen">
+    <div className="relative w-screen mt-25">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -left-230 rotate-12 top-250 -z-10 sm:rotate-0 sm:-left-70 sm:top-70 md:-left-20 md:top-70 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -134,7 +134,7 @@ export default function MesMethodes() {
       <div className="grid mt-10 md:mt-20 w-full lg:w-[70%] px-5 grid-cols-1 gap-y-15 sm:grid-cols-3 gap-x-3 mx-auto justify-items-center align-items-center">
         {miniCardsContent.map((content) => (
           <MiniCards
-            key={'difficultes' + content.card_num}
+            key={'cardMethode' + content.card_num}
             image={content.image}
             titre={content.titre}
             background={content.background}

@@ -39,6 +39,18 @@
   --color-foam-900: #254b54;
   --color-foam-950: #143138;
 
+  --color-lima-50: #effde8;
+  --color-lima-100: #ddf9ce;
+  --color-lima-200: #bcf3a3;
+  --color-lima-300: #93e96d;
+  --color-lima-400: #6ddb40;
+  --color-lima-500: #50c823;
+  --color-lima-600: #389917;
+  --color-lima-700: #2c7516;
+  --color-lima-800: #275d17;
+  --color-lima-900: #244f18;
+  --color-lima-950: #0e2b08;
+
 
 }
 
@@ -75,5 +87,26 @@
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+.pulsing {
+  animation: pulsing 0.8s ease-in-out forwards;
+}
+@keyframes pulsing {
+  0% {
+    opacity: 0.7;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
   }
 }

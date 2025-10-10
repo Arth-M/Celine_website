@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function MiniCards({ image, titre, texte, background, textProperty, imageClass, rotate }) {
   return (
     <div
-      className={`  relative w-[190px] h-fit flex flex-col mx-2 place-center`}
+      className={`relative w-[190px] h-fit flex flex-col mx-2 place-center`}
     >
         <svg
         xmlns="http://www.w3.org/2000/svg"

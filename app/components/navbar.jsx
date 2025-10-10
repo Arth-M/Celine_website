@@ -21,12 +21,13 @@ export default function Navbar() {
 
             // Only pulse once when visibility state changes for the first time
             if (!hasPulsed.current && wasVisible !== nowVisible) {
-              const doctolibButton = document.querySelector("#doctolibButton")
-              if (doctolibButton) {
-                doctolibButton.classList.add('animate-bounce')
+              const navDiv = document.querySelector("#nav-div")
+              if (navDiv) {
+                navDiv.classList.add('pulsing')
                 setTimeout(() => {
-                  doctolibButton.classList.remove('animate-bounce')
-                }, 1500)
+                  navDiv.classList.remove('pulsing')
+                  navDiv.classList.remove('opacity-70')
+                }, 1000)
                 hasPulsed.current = true // Mark as pulsed permanently
               }
             }
@@ -74,7 +75,7 @@ export default function Navbar() {
       }`}
       ref={menuRef}
     >
-      <div className="mx-auto w-screen px-2 md:px-5 mt-1 lg:mt-4">
+      <div id='nav-div' className="mx-auto opacity-70 w-screen px-2 md:px-5 mt-1 lg:mt-4">
         <div className="relative w-full grid grid-cols-[minmax(110px,1fr)_minmax(180px,4fr)_minmax(30px,1fr)] lg:grid-cols-[minmax(110px,1fr)_minmax(310px,3fr)_minmax(560px,4fr)] h-16 items-center justify-center">
           {/* <div className="absolute inset-y-0 left-0 flex items-center md:hidden min-w-[120px]">
             <span className="sr-only">Rendez-vous Doctolib</span>
