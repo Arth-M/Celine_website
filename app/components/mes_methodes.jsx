@@ -43,7 +43,7 @@ export default function MesMethodes() {
         })
       },
       {
-        threshold: isMobile ? 0.2 : 0.5,
+        threshold: isMobile ? 0.5 : 0.5,
         rootMargin: isMobile ? '0px 0px 20% 0px' : '0px 0px 0% 0px' // wait until it’s 20% deeper in the viewport
       }
     )
