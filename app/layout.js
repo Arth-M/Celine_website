@@ -8,7 +8,7 @@ export const metadata = {
     'Céline Castronovo, psychologue diplômée à Montpellier. Consultations individuelles, thérapie et accompagnement psychologique. Pratique les thérapies TCC et EMDR, spécialisée en Émotions et Cognition. La prise de rendez-vous se fait sur Doctolib. Conventionnée Santé Psy Étudiant.',
   // Auteur
   authors: [{ name: 'Céline Castronovo' }],
-  creator: 'Céline Castronovo',
+  creator: 'ATU-Web',
   // Open Graph
   openGraph: {
     type: 'website',
