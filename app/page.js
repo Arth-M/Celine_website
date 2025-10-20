@@ -1,11 +1,11 @@
-import Navbar from './components/navbar'
-import HeroImage from './components/hero_image'
-import Biography from './components/biography'
-import MesMethodes from './components/mes_methodes'
-import PourquoiConsulter from './components/pourquoi_consulter'
-import Populations from './components/populations'
+import Navbar from './_components/navbar'
+import HeroImage from './_components/hero_image'
+import Biography from './_components/biography'
+import MesMethodes from './_components/mes_methodes'
+import PourquoiConsulter from './_components/pourquoi_consulter'
+import Populations from './_components/populations'
 
-import InfosPratiques from './components/infosPratiques'
+import InfosPratiques from './_components/infosPratiques'
 
 export default function Home() {
   return (
