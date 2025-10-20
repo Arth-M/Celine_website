@@ -9,7 +9,8 @@ export default function Navbar() {
   const hasPulsed = useRef(false)
 
 
- useEffect(() => {
+  useEffect(() => {
+    const navDiv = document.querySelector("#nav-div")
     const isMobile = window.innerWidth < 1000; // you can tweak this breakpoint
     const observer = new IntersectionObserver(
       (entries) => {
@@ -19,18 +20,22 @@ export default function Navbar() {
             const nowVisible = !entry.isIntersecting
             setIsVisible(nowVisible)
 
-            // Only pulse once when visibility state changes for the first time
-            if (!hasPulsed.current && wasVisible !== nowVisible) {
-              const navDiv = document.querySelector("#nav-div")
-              if (navDiv) {
-                navDiv.classList.add('pulsing')
-                setTimeout(() => {
-                  navDiv.classList.remove('pulsing')
-                  navDiv.classList.remove('opacity-70')
-                }, 1000)
-                hasPulsed.current = true // Mark as pulsed permanently
-              }
+            if (isVisible) {
+              navDiv.classList.remove("opacity-70");
             }
+
+            // Only pulse once when visibility state changes for the first time
+            // if (!hasPulsed.current && wasVisible !== nowVisible) {
+            //   const navDiv = document.querySelector("#nav-div")
+            //   if (navDiv) {
+            //     navDiv.classList.add('pulsing')
+            //     setTimeout(() => {
+            //       navDiv.classList.remove('pulsing')
+            //       navDiv.classList.remove('opacity-70')
+            //     }, 1000)
+            //     hasPulsed.current = true // Mark as pulsed permanently
+            //   }
+            // }
           }
         })
       },
@@ -70,7 +75,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-screen fixed top-0 right-0 left-0 z-50 bg-gray-100 transition-opacity duration-200 py-3 ${
+      className={`w-screen fixed top-0 right-0 left-0 z-50 bg-gray-100 py-3 ${
         isVisible ? 'bg-gray-100 border-b border-b-teal-600' : 'bg-transparent'
       }`}
       ref={menuRef}
