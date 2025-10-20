@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import MiniCards from './mini_cards'
 import { useState, useEffect, useRef } from 'react'
 
@@ -6,9 +6,8 @@ export default function MesMethodes() {
   const [methodeVisible, setMethodeVisible] = useState(false)
   const hasRotated = useRef(false)
 
-
   useEffect(() => {
-    const isMobile = window.innerWidth < 1000; // you can tweak this breakpoint
+    const isMobile = window.innerWidth < 1000 // you can tweak this breakpoint
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -18,24 +17,23 @@ export default function MesMethodes() {
             setMethodeVisible(nowVisible)
 
             if (!hasRotated.current && !wasVisible && nowVisible) {
-              const animatedSvgs = document.querySelectorAll(".animated-svg")
-              if (animatedSvgs.length>0) {
-                  setTimeout(() => {
-                    animatedSvgs[0].classList.add('rotate90')
-                  }, 0);
-                  setTimeout(() => {
-                    animatedSvgs[1].classList.add('rotate90')
-                  }, 600);
-                  setTimeout(() => {
+              const animatedSvgs = document.querySelectorAll('.animated-svg')
+              if (animatedSvgs.length > 0) {
+                setTimeout(() => {
+                  animatedSvgs[0].classList.add('rotate90')
+                }, 0)
+                setTimeout(() => {
+                  animatedSvgs[1].classList.add('rotate90')
+                }, 600)
+                setTimeout(() => {
                   animatedSvgs[2].classList.add('rotate90')
-                }, 1200);
+                }, 1200)
 
-
-              //   setTimeout(() => {
-              //     animatedSvgs.forEach(svg => {
-              //   svg.classList.remove('rotate-360')
-              // })
-              //   }, 2000)
+                //   setTimeout(() => {
+                //     animatedSvgs.forEach(svg => {
+                //   svg.classList.remove('rotate-360')
+                // })
+                //   }, 2000)
                 hasRotated.current = true
               }
             }
@@ -44,7 +42,7 @@ export default function MesMethodes() {
       },
       {
         threshold: isMobile ? 0.5 : 0.5,
-        rootMargin: isMobile ? '0px 0px 20% 0px' : '0px 0px 0% 0px' // wait until it’s 20% deeper in the viewport
+        rootMargin: isMobile ? '0px 0px 20% 0px' : '0px 0px 0% 0px', // wait until it’s 20% deeper in the viewport
       }
     )
 
@@ -58,7 +56,6 @@ export default function MesMethodes() {
       observer.disconnect()
     }
   }, [methodeVisible])
-
 
   const miniCardsContent = [
     {
@@ -101,7 +98,7 @@ export default function MesMethodes() {
     <div className="relative w-screen mt-25">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 -left-230 rotate-12 top-250 -z-10 sm:rotate-0 sm:-left-70 sm:top-70 md:-left-20 md:top-70 transform-gpu overflow-hidden px-36 blur-3xl"
+        className="absolute inset-x-0 -left-230 top-250 -z-10 sm:-left-70 sm:top-70 md:-left-20 md:top-70 transform-gpu overflow-hidden px-36 blur-3xl"
       >
         <div
           style={{
@@ -144,7 +141,6 @@ export default function MesMethodes() {
             className="my-3"
           />
         ))}
-
       </div>
       <div className="container @container mx-auto px-8 mt-10 relative">
         {/* <h2 className="font-semibold tracking-wider @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800">
@@ -152,20 +148,20 @@ export default function MesMethodes() {
         </h2> */}
         <p className="font-light @sm:w-sm @md:w-md @lg:w-lg @lg:mx-auto text-teal-800 text-justify">
           Mémoire, perception, interactions humain-environnement : certaines
-          difficultés peuvent être liées à nos processus cognitifs courants
-          et nos biais sans que nous nous en apercevions.
+          difficultés peuvent être liées à nos processus cognitifs courants et
+          nos biais sans que nous nous en apercevions.
           <br />
-          Les émotions fortes que nous vivons dans nos vies ou notre
-          enfance peuvent rester ancrées en nous et nous mettre en difficulté.
-          Certaines situations que nous avons vécues peuvent nécessiter de se centrer
-          sur les émotions passées qui nous empêchent d'avancer sereinement.
+          Les émotions fortes que nous vivons dans nos vies ou notre enfance
+          peuvent rester ancrées en nous et nous mettre en difficulté. Certaines
+          situations que nous avons vécues peuvent nécessiter de se centrer sur
+          les émotions passées qui nous empêchent d'avancer sereinement.
           <br />
-          EMDR et TCC sont des thérapies spécifiques indiquées dans le traitement de certains troubles.
-          Après avoir discuté de vos difficultés et de vos objectifs, nous pourrons évaluer si ce genre
-          de thérapie serait adapté à vos besoins.
+          EMDR et TCC sont des thérapies spécifiques indiquées dans le
+          traitement de certains troubles. Après avoir discuté de vos
+          difficultés et de vos objectifs, nous pourrons évaluer si ce genre de
+          thérapie serait adapté à vos besoins.
         </p>
       </div>
     </div>
-
   )
 }
