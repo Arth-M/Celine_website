@@ -70,30 +70,19 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-screen fixed top-0 right-0 left-0 z-50 bg-gray-100 transition-opacity duration-200 ${
+      className={`w-screen fixed top-0 right-0 left-0 z-50 bg-gray-100 transition-opacity duration-200 py-3 ${
         isVisible ? 'bg-gray-100 border-b border-b-teal-600' : 'bg-transparent'
       }`}
       ref={menuRef}
     >
-      <div id='nav-div' className="mx-auto opacity-70 w-screen px-2 md:px-5 mt-1 lg:mt-4">
-        <div className="relative w-full grid grid-cols-[minmax(110px,1fr)_minmax(180px,4fr)_minmax(30px,1fr)] lg:grid-cols-[minmax(110px,1fr)_minmax(310px,3fr)_minmax(560px,4fr)] h-16 items-center justify-center">
-          {/* <div className="absolute inset-y-0 left-0 flex items-center md:hidden min-w-[120px]">
-            <span className="sr-only">Rendez-vous Doctolib</span>
-            <a
-              href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
-              rel="keep-params"
-              className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] w-25 h-11 bg-contain bg-no-repeat mx-auto"
-              target="_blank"
-            ></a>
-          </div> */}
-
-
+      <div id='nav-div' className="mx-auto opacity-70 w-screen px-2 md:px-5">
+        <div className="relative w-full grid grid-flow-col grid-cols-[minmax(100px,1fr)_minmax(180px,4fr)_minmax(15px,1fr)] lg:grid-cols-[minmax(110px,1fr)_minmax(310px,3fr)_minmax(560px,5fr)] items-center justify-start sm:justify-center">
           <div className="inset-y-0 left-0 flex items-center" id="doctolibButton">
             <span className="sr-only">Rendez-vous Doctolib</span>
             <a
               href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
               rel="keep-params"
-              className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] w-25 h-11 bg-contain bg-no-repeat lg:mx-auto"
+              className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] sm:w-25 sm:h-11 w-18 h-8 bg-contain bg-no-repeat lg:mx-auto"
               target="_blank"
             ></a>
           </div>
@@ -117,7 +106,7 @@ export default function Navbar() {
           </div>
 
 
-          <div className="hidden lg:flex justify-center items-center mx-auto min-w-[559px]">
+          <div className="hidden lg:flex items-center justify-end min-w-[559px]">
             <div className="space-x-4 justify-center items-center">
               <a
                 href="#section-accueil"

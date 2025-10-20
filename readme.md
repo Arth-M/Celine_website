@@ -1,6 +1,6 @@
 # Using Next.js and React
 
-1. To use next.js you should add a **package.json** file with an empty object **{}** in the same directory as the index.html file.
+1. To use next.js you should add a **package.json** file with an empty object **{}** as a top level file (same level as app)
 
 2. Then in the **terminal**, in the root the project, run the following **command**:
 
@@ -23,16 +23,22 @@ for your **secrets**
 
 5. Add
 
-`"scripts": {
-  "dev": "next dev"
-},`
+` "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "npx prettier . --write"
+  },`
 
 in your package.json object to enable next server.
 package.json should look like this:
 `{
-  "scripts": {
-    "dev": "next dev"
-  },
+   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "npx prettier . --write"
+  },,
   "dependencies": {
     "next": "^14.0.3",
     "react": "^18.3.1",
@@ -40,7 +46,8 @@ package.json should look like this:
   }
 }`
 
-6. Add an **app** directory with an **page.js** and **layout.js** file in it
+6. Add an **app** directory with your routes structure - see nextjs doc-
+   example for a single page app: an **page.js** and **layout.js** file in it
 
 page.js:
 `export default function Home() {
@@ -140,44 +147,34 @@ next-env.d.ts
 
 ## In the terminal : **git init git add . ** etc... then use github to create your remote origin and push
 
-9. Add tailwind to your project 9 to 14 are not god anymore, this is for manual install of tailwind if not with next, see next tuto for tailwind installation
-   `npm install tailwindcss @tailwindcss/cli`
+9. Add tailwind to your project
+   Install @tailwindcss/postcss and its peer dependencies via npm.
+   Terminal
 
-10. Add a **src** directory with a **input.css** file and
-    `@import "tailwindcss";`
-    within it
+`npm install tailwindcss @tailwindcss/postcss postcss`
 
-Project structure: <br><br>
-|your-project/| --- | --- |<br>
-| -> | app/| --- | <br>
-| --- | -> |layout.js| <br>
-| --- | -> |page.js| <br>
-| -> |package.json| --- | <br>
-| -> |.env (optional)| --- | <br>
-| -> |.gitignore (optional)| --- | <br>
-| -> | src | --- | <br>
-| --- | -> |input.css| <br>
+## Configure PostCSS Plugins
 
-11. Start the Tailwind CLI build process
-    `npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch`
+Create a postcss.config.mjs file in the root of your project and add the @tailwindcss/postcss plugin to your PostCSS configuration.
+in postcss.config.mjs:
 
-12. Add
-    `"css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"`
-    to your package.json:
-    `{
-"scripts": {
-  "dev": "next dev",
-  "css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
-}, ...`
+`const config = {  plugins: {    "@tailwindcss/postcss": {},  },};export default config;`
 
-13. In layout.js add at the beginning `import '../src/output.css'`
+## Import Tailwind CSS
 
-14. You have two running processes to stop and start for your projects now:
+Add an @import to ./app/globals.css that imports Tailwind CSS.
+in globals.css :
 
-- npm run dev
-- npm run css
+`@import "tailwindcss";`
 
-Those will launch the server and tailwind css
+## add your global.css in layout.js
+
+in layout.js:
+`import './globals.css'`
+
+## Start your build process
+
+Run your build process with npm run dev and start using Tailwind in your project
 
 14. Production:
     When you build and deploy your app for production:
