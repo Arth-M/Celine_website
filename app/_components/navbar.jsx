@@ -81,13 +81,14 @@ export default function Navbar() {
       ref={menuRef}
     >
       <div id='nav-div' className="mx-auto opacity-70 w-screen px-2 md:px-5">
-        <div className="relative w-full grid grid-flow-col grid-cols-[minmax(100px,1fr)_minmax(180px,4fr)_minmax(15px,1fr)] lg:grid-cols-[minmax(110px,1fr)_minmax(310px,3fr)_minmax(560px,5fr)] items-center justify-start sm:justify-center">
+        <div className="relative w-full grid grid-flow-col grid-cols-[minmax(110px,1fr)_minmax(180px,4fr)_minmax(15px,1fr)] lg:grid-cols-[minmax(110px,1fr)_minmax(230px,3fr)_minmax(610px,5fr)] items-center justify-start sm:justify-center">
           <div className="inset-y-0 left-0 flex items-center" id="doctolibButton">
             <span className="sr-only">Rendez-vous Doctolib</span>
             <a
               href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
               rel="keep-params"
-              className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] sm:w-25 sm:h-11 w-18 h-8 bg-contain bg-no-repeat lg:mx-auto"
+              className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] w-25 h-11 bg-contain bg-no-repeat lg:mx-auto"
+              //w-18 h-8
               target="_blank"
             ></a>
           </div>
@@ -102,7 +103,7 @@ export default function Navbar() {
               className="object-scale-down border-r-4 lg:object-cover"
             />
             <p
-              className={`font-light select-all tracking-tight text-teal-900 text-sm ${
+              className={`font-light select-all text-wrap tracking-tight text-teal-900 text-md ${
                 isVisible ? 'text-teal-700' : ' text-teal-900'
               }`}
             >
@@ -111,11 +112,11 @@ export default function Navbar() {
           </div>
 
 
-          <div className="hidden lg:flex items-center justify-end min-w-[559px]">
+          <div className="hidden lg:flex items-center justify-end min-w-[607px]">
             <div className="space-x-4 justify-center items-center">
               <a
                 href="#section-accueil"
-                className={`rounded-md font-light text-sm hover:bg-white/5  ${
+                className={`rounded-md font-light text-md hover:bg-white/5  ${
                   isVisible ? ('text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                 }`}
               >
@@ -123,7 +124,7 @@ export default function Navbar() {
               </a>
               <a
                 href="#section-biography"
-                className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                className={`rounded-md font-light text-md hover:bg-white/5 ${
                   isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                 }`}
               >
@@ -131,7 +132,7 @@ export default function Navbar() {
               </a>
               <a
                 href="#section-methodes"
-                className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                className={`rounded-md font-light text-md hover:bg-white/5 ${
                   isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                 }`}
               >
@@ -139,7 +140,7 @@ export default function Navbar() {
               </a>
               <a
                 href="#section-pourquoi"
-                className={`rounded-md font-light text-sm hover:bg-white/5 ${
+                className={`rounded-md font-light text-md hover:bg-white/5 ${
                   isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                 }`}
               >
@@ -148,17 +149,17 @@ export default function Navbar() {
 
               <a
                 href="#section-infos"
-                className={`rounded-md font-light text-sm hover:bg-white/5  ${
+                className={`rounded-md font-light text-md hover:bg-white/5  ${
                   isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
                 }`}
               >
-                Informations Pratiques
+                Informations pratiques
               </a>
             </div>
           </div>
 
 
-          <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0 lg:invisible">
+          <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0 lg:hidden">
             {/* Mobile menu button with hamburger icon */}
             <button
               type="button"

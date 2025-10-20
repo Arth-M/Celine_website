@@ -118,7 +118,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="icon" type="image/svg" href="./images/care2.svg"></link>
       </head>
-      <body className="m-0 p-0 w-screen h-screen relative bg-teal-50">
+      <body className="m-0 p-0 w-screen h-screen relative bg-teal-50 font-general">
         {children}
       </body>
     </html>
