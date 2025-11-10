@@ -24,7 +24,6 @@ export default function MiniCards({ image, titre, texte, background, textPropert
         width="100"
         height="100"
         loading="lazy"
-        priority={false}
         className={`object-scale-down text-start col-span z-10 mx-auto mb-5 mt-2 ${imageClass}`}
       />
       {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 260" width="200" height="180"> */}

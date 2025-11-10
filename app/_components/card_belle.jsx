@@ -12,7 +12,7 @@ export default function CardBelle() {
             alt="Une consultation chez le psychologue. Le patient parle de ses émotions, des évènements qu'il vit et la psychologue l'accompagne"
             width="309"
             height="303"
-            priority={true} // This disables lazy loading to prioritize the loading for hero section
+            preload={true}
             className="object-scale-down lg:object-cover rounded-full w-[60%] h-auto mx-auto mb-3 mt-2 border-1 border-teal-700 shadow-sm"
           />
           <p className="tracking-wider text-md text-teal-900 mx-auto text-center w-fit no-wrap">

@@ -99,7 +99,7 @@ export default function Navbar() {
               alt="Indication sur la localisation du cabinet"
               width="30"
               height="30"
-              priority={true} // This disables lazy loading to prioritize the loading for hero section
+              preload={true}
               className="object-scale-down border-r-4 lg:object-cover"
             />
             <p

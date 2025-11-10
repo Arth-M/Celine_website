@@ -23,7 +23,6 @@ export default function InfosPratiques() {
                 width="25"
                 height="25"
                 loading='lazy'
-                priority={false}
                 className="object-scale-down text-start col-span"
               />
             </div>
@@ -45,7 +44,6 @@ export default function InfosPratiques() {
                 width="25"
                 height="25"
                 loading='lazy'
-                priority={false}
                 className="object-scale-down text-start col-span"
               />
             </div>
@@ -66,7 +64,6 @@ export default function InfosPratiques() {
                 width="25"
                 height="25"
                 loading='lazy'
-                priority={false}
                 className="object-scale-down text-start col-span"
               />
             </div>
