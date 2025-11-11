@@ -4,6 +4,7 @@ import Biography from './_components/biography'
 import MesMethodes from './_components/mes_methodes'
 import PourquoiConsulter from './_components/pourquoi_consulter'
 import Populations from './_components/populations'
+import ArrowUp from './_components/arrowUp'
 
 import InfosPratiques from './_components/infosPratiques'
 
@@ -11,13 +12,13 @@ export default function Home() {
   return (
     <main className="flex flex-col w-screen">
       <Navbar />
-      <section id="section-accueil" className="flex-initial">
+      <section id="section-accueil" className="flex-initial not-arrow-up">
         <HeroImage />
       </section>
 
       <section
         id="section-biography"
-        className="flex-initial lg:scroll-mt-15 -scroll-mt-18"
+        className="flex-initial lg:scroll-mt-15 -scroll-mt-18 not-arrow-up"
         data-navbarneeded
       >
         <Biography />
@@ -42,6 +43,7 @@ export default function Home() {
       <section id="section-infos">
         <InfosPratiques />
       </section>
+      <ArrowUp />
     </main>
   )
 }

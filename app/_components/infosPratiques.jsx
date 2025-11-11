@@ -115,7 +115,7 @@ export default function InfosPratiques() {
       </div>
       <div className="block text-pale-prim-950 text-center">
         <p className='font-medium text-xs'>E.I. Céline Castronovo - 2025 Tous droits réservés</p>
-        <a href="http://www.atuweb.fr" className="font-medium text-xs">ATU-Web</a>
+        <p className='font-medium text-xs'>Réalisé par <a href="http://www.atuweb.fr" className="font-medium text-xs">ATU-Web</a></p>
       </div>
     </div>
   )
