@@ -29,7 +29,7 @@ export default function ArrowUp() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-25 -right-7 z-90 p-3 rounded-xl shadow transition-all duration-300
+      className={`fixed bottom-15 md:bottom-25 -right-7 z-90 p-3 rounded-xl shadow transition-all duration-300
         bg-copperfield-500 hover:bg-copperfield-700
         ${showArrow ? "opacity-100 -translate-x-10 duration-300 ease-in" : "translate-x-0 invisible"}`}
       aria-label="Retour en haut"
