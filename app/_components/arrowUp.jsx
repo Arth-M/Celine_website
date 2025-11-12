@@ -29,9 +29,9 @@ export default function ArrowUp() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-30 right-6 z-90 p-3 rounded-xl shadow transition-all duration-300
+      className={`fixed bottom-25 -right-7 z-90 p-3 rounded-xl shadow transition-all duration-300
         bg-copperfield-500 hover:bg-copperfield-700
-        ${showArrow ? "opacity-100 translate-y-0" : "hidden"}`}
+        ${showArrow ? "opacity-100 -translate-x-10 duration-300 ease-in" : "translate-x-0 invisible"}`}
       aria-label="Retour en haut"
     >
       <Image
@@ -41,7 +41,7 @@ export default function ArrowUp() {
         height="15"
         preload="true"
         priority="true"
-        className="object-cover h-fit rounded-l-xl text-copperfield-500"
+        className="object-cover h-fit rounded-l-xl text-copperfield-400"
         // className="object-cover w-25 h-fit rounded-full bg-copperfield-400"
       />
     </button>
