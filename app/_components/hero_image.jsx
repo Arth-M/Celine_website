@@ -13,7 +13,7 @@ export default function HeroImage() {
           src="/images/consultation.webp"
           alt="Une consultation chez le psychologue. Le patient parle de ses émotions, des évènements qu'il vit et la psychologue l'accompagne"
           preload="true"
-          className="w-screen h-fit object-cover 2xl:object-top opacity-50"
+          className="w-screen h-fit object-cover 2xl:object-top opacity-50 bg-fixed"
           // fill={true}
           width="1521"
           height="787"
