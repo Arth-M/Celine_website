@@ -80,18 +80,8 @@ export default function Navbar() {
       }`}
       ref={menuRef}
     >
-      <div id='nav-div' className="mx-auto opacity-70 w-screen px-2 md:px-5">
-        <div className="relative w-full grid grid-flow-col grid-cols-[minmax(110px,1fr)_minmax(180px,4fr)_minmax(15px,1fr)] lg:grid-cols-[minmax(110px,1fr)_minmax(230px,3fr)_minmax(610px,5fr)] items-center justify-start sm:justify-center">
-          <div className="inset-y-0 left-0 flex items-center" id="doctolibButton">
-            <span className="sr-only">Rendez-vous Doctolib</span>
-            <a
-              href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
-              rel="keep-params"
-              className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] w-25 h-11 bg-contain bg-no-repeat lg:mx-auto"
-              //w-18 h-8
-              target="_blank"
-            ></a>
-          </div>
+      <div id='nav-div' className="mx-auto opacity-70 px-2 md:px-5 w-full">
+        <div className="relative w-full grid grid-flow-col grid-cols-[minmax(180px,4fr)_minmax(110px,1.2fr)_minmax(15px,0.8fr)] sm:grid-cols-[minmax(180px,4fr)_minmax(110px,1.5fr)_minmax(15px,0.5fr)] lg:grid-cols-[minmax(230px,3fr)_minmax(610px,5fr)_minmax(110px,1fr)] items-center justify-start">
 
           <div className="flex justify-start items-center wrap-normal">
             <Image
@@ -156,6 +146,16 @@ export default function Navbar() {
                 Informations pratiques
               </a>
             </div>
+          </div>
+          <div className="inset-y-0 left-0 flex self-center justify-self-end lg:align-self-center" id="doctolibButton">
+            <span className="sr-only">Rendez-vous Doctolib</span>
+            <a
+              href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
+              rel="keep-params"
+              className="rounded-3xl md:rounded-4xl bg-[url('/images/doctolib.png')] w-25 h-11 bg-contain bg-no-repeat lg:mx-auto"
+              //w-18 h-8
+              target="_blank"
+            ></a>
           </div>
 
 
