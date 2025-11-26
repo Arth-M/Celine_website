@@ -50,7 +50,7 @@ export const jsonLdData = {
   name: 'Céline Castronovo',
   image: 'https://psychologie-montpellier.fr/images/celine_castronovo.webp',
   description:
-    'Céline Castronovo, psychologue diplômée à Montpellier. Consultations individuelles, thérapie et accompagnement psychologique. Pratique les thérapies TCC et EMDR, spécialisée en Émotions et Cognition. La prise de rendez-vous se fait sur Doctolib. Conventionnée Santé Psy Étudiant.',
+    'Céline Castronovo est une Psychologue diplômée installée à Montpellier. Consultations individuelles, thérapie et accompagnement psychologique. Pratique les thérapies TCC et EMDR, spécialisée en Émotions et Cognition. La prise de rendez-vous se fait sur Doctolib. Conventionnée Santé Psy Étudiant.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '10 avenue de Toulouse',
