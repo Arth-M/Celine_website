@@ -13,9 +13,9 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    title: 'Céline Castronovo - Psychologue à Montpellier',
+    title: 'Consultations et thérapies individuelles à Montpellier.',
     description:
-      'Psychologue diplômée à Montpellier. Consultations individuelles et accompagnement thérapeutique personnalisé.',
+      "Céline Castronovo s'appuie sur la Psychologie cognitive, la TCC et l'EMDR pour accompagner ses patients face aux difficultés de la vie et dans le traitement des traumas.",
     siteName: 'Céline Castronovo - Psychologue',
     url: 'https://psychologie-montpellier.fr',
     images: [
@@ -30,8 +30,8 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'Céline Castronovo - Psychologue à Montpellier',
-    description: 'Consultations et thérapie individuelle à Montpellier.',
+    title: 'Céline Castronovo - Psychologue diplômée',
+    description: 'Consultations et thérapies individuelles à Montpellier.',
     images: [
       'https://psychologie-montpellier.fr/images/celine_castronovo.webp',
     ],
