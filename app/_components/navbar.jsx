@@ -9,10 +9,9 @@ export default function Navbar() {
   const buttonRef = useRef(null)
   const hasPulsed = useRef(false)
 
-
   useEffect(() => {
-    const navDiv = document.querySelector("#nav-div")
-    const isMobile = window.innerWidth < 1000; // you can tweak this breakpoint
+    const navDiv = document.querySelector('#nav-div')
+    const isMobile = window.innerWidth < 1000 // you can tweak this breakpoint
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -22,7 +21,7 @@ export default function Navbar() {
             setIsVisible(nowVisible)
 
             if (isVisible) {
-              navDiv.classList.remove("opacity-70");
+              navDiv.classList.remove('opacity-70')
             }
 
             // Only pulse once when visibility state changes for the first time
@@ -42,7 +41,7 @@ export default function Navbar() {
       },
       {
         threshold: isMobile ? 0.5 : 0.7,
-        rootMargin: isMobile ? '0px 0px 0% 0px' : '0px 0px 0% 0px'
+        rootMargin: isMobile ? '0px 0px 0% 0px' : '0px 0px 0% 0px',
       }
     )
 
@@ -60,7 +59,7 @@ export default function Navbar() {
   // Handle clicking outside to close menu
   useEffect(() => {
     function handleClickOutside(event) {
-       if (buttonRef.current && buttonRef.current.contains(event.target)) {
+      if (buttonRef.current && buttonRef.current.contains(event.target)) {
         return
       }
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -83,9 +82,8 @@ export default function Navbar() {
         isVisible ? 'bg-gray-100 border-b border-b-teal-600' : 'bg-transparent'
       }`}
     >
-      <div id='nav-div' className="mx-auto opacity-70 px-2 md:px-5 w-full">
+      <div id="nav-div" className="mx-auto opacity-70 px-2 md:px-5 w-full">
         <div className="relative w-full grid grid-flow-col grid-cols-[minmax(180px,4fr)_minmax(110px,1.2fr)_minmax(15px,0.8fr)] sm:grid-cols-[minmax(180px,4fr)_minmax(110px,1.5fr)_minmax(15px,0.5fr)] lg:grid-cols-[minmax(230px,3fr)_minmax(610px,5fr)_minmax(110px,1fr)] items-center justify-start">
-
           <div className="flex justify-start items-center wrap-normal">
             <Image
               src="/images/pin.svg"
@@ -104,13 +102,14 @@ export default function Navbar() {
             </p>
           </div>
 
-
           <div className="hidden lg:flex items-center justify-end min-w-[607px]">
             <div className="space-x-4 justify-center items-center">
               <a
                 href="#section-accueil"
                 className={`rounded-md font-light text-md hover:bg-white/5  ${
-                  isVisible ? ('text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                  isVisible
+                    ? 'text-teal-700 hover:text-teal-900 hover:font-normal'
+                    : ' text-teal-900  hover:text-white'
                 }`}
               >
                 Accueil
@@ -118,7 +117,9 @@ export default function Navbar() {
               <a
                 href="#section-biography"
                 className={`rounded-md font-light text-md hover:bg-white/5 ${
-                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                  isVisible
+                    ? ' text-teal-700 hover:text-teal-900 hover:font-normal'
+                    : ' text-teal-900  hover:text-white'
                 }`}
               >
                 Qui suis-je ?
@@ -126,7 +127,9 @@ export default function Navbar() {
               <a
                 href="#section-methodes"
                 className={`rounded-md font-light text-md hover:bg-white/5 ${
-                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                  isVisible
+                    ? ' text-teal-700 hover:text-teal-900 hover:font-normal'
+                    : ' text-teal-900  hover:text-white'
                 }`}
               >
                 Mes méthodes
@@ -134,7 +137,9 @@ export default function Navbar() {
               <a
                 href="#section-pourquoi"
                 className={`rounded-md font-light text-md hover:bg-white/5 ${
-                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                  isVisible
+                    ? ' text-teal-700 hover:text-teal-900 hover:font-normal'
+                    : ' text-teal-900  hover:text-white'
                 }`}
               >
                 Pourquoi consulter ?
@@ -143,14 +148,19 @@ export default function Navbar() {
               <a
                 href="#section-infos"
                 className={`rounded-md font-light text-md hover:bg-white/5  ${
-                  isVisible ?  (' text-teal-700 hover:text-teal-900 hover:font-normal') : (' text-teal-900  hover:text-white')
+                  isVisible
+                    ? ' text-teal-700 hover:text-teal-900 hover:font-normal'
+                    : ' text-teal-900  hover:text-white'
                 }`}
               >
                 Informations pratiques
               </a>
             </div>
           </div>
-          <div className="inset-y-0 left-0 flex self-center justify-self-end lg:align-self-center" id="doctolibButton">
+          <div
+            className="inset-y-0 left-0 flex self-center justify-self-end lg:align-self-center"
+            id="doctolibButton"
+          >
             <span className="sr-only">Rendez-vous Doctolib</span>
             <a
               href="https://www.doctolib.fr/psychologue/montpellier/celine-castronovo"
@@ -160,7 +170,6 @@ export default function Navbar() {
               target="_blank"
             ></a>
           </div>
-
 
           <div className="absolute inset-y-0 right-0 z-90 flex items-center justify-center pr-2 lg:hidden">
             {/* Mobile menu button with hamburger icon */}
@@ -197,10 +206,17 @@ export default function Navbar() {
         </div>
       </div>
 
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-teal-800/30 backdrop-blur-[1px] z-40"
+          onClick={() => setIsMobileMenuOpen(false)}
+        ></div>
+      )}
+
       {/* Mobile menu */}
       <div
         className={`lg:hidden transition-transform duration-400 z-50 ${isMobileMenuOpen ? 'block translate-x-0' : ' translate-x-full'} fixed right-0`}
-              ref={menuRef}
+        ref={menuRef}
       >
         <div className="space-y-1 border border-teal-100 px-2 pt-2 pb-3 bg-gray-100 w-fit rounded-l-2xl shadow-2xl">
           <a
