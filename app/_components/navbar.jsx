@@ -202,7 +202,7 @@ export default function Navbar() {
         className={`lg:hidden transition-transform duration-300 z-50 ${isMobileMenuOpen ? 'block translate-x-0' : ' translate-x-full'} fixed right-0`}
               ref={menuRef}
       >
-        <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-100 w-fit rounded-l-2xl shadow-2xl">
+        <div className="space-y-1 border border-teal-100 px-2 pt-2 pb-3 bg-gray-100 w-fit rounded-l-2xl shadow-2xl">
           <a
             href="#section-accueil"
             className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
