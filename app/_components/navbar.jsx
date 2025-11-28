@@ -6,6 +6,7 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const menuRef = useRef(null)
+  const buttonRef = useRef(null)
   const hasPulsed = useRef(false)
 
 
@@ -59,6 +60,9 @@ export default function Navbar() {
   // Handle clicking outside to close menu
   useEffect(() => {
     function handleClickOutside(event) {
+       if (buttonRef.current && buttonRef.current.contains(event.target)) {
+        return
+      }
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setIsMobileMenuOpen(false)
       }
@@ -75,10 +79,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-screen fixed top-0 right-0 left-0 z-50 bg-gray-100 py-3 ${
+      className={`w-screen fixed z-80 top-0 right-0 left-0 bg-gray-100 py-3 ${
         isVisible ? 'bg-gray-100 border-b border-b-teal-600' : 'bg-transparent'
       }`}
-      ref={menuRef}
     >
       <div id='nav-div' className="mx-auto opacity-70 px-2 md:px-5 w-full">
         <div className="relative w-full grid grid-flow-col grid-cols-[minmax(180px,4fr)_minmax(110px,1.2fr)_minmax(15px,0.8fr)] sm:grid-cols-[minmax(180px,4fr)_minmax(110px,1.5fr)_minmax(15px,0.5fr)] lg:grid-cols-[minmax(230px,3fr)_minmax(610px,5fr)_minmax(110px,1fr)] items-center justify-start">
@@ -159,9 +162,10 @@ export default function Navbar() {
           </div>
 
 
-          <div className="absolute inset-y-0 right-0 flex items-center justify-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0 lg:hidden">
+          <div className="absolute inset-y-0 right-0 z-90 flex items-center justify-center pr-2 lg:hidden">
             {/* Mobile menu button with hamburger icon */}
             <button
+              ref={buttonRef}
               type="button"
               onClick={(e) => {
                 e.stopPropagation()
@@ -195,9 +199,10 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} flex justify-end`}
+        className={`lg:hidden transition-transform duration-300 z-50 ${isMobileMenuOpen ? 'block translate-x-0' : ' translate-x-full'} fixed right-0`}
+              ref={menuRef}
       >
-        <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-100 w-fit">
+        <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-100 w-fit rounded-l-2xl shadow-2xl">
           <a
             href="#section-accueil"
             className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
