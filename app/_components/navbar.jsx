@@ -199,7 +199,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden transition-transform duration-400 z-50 ${isMobileMenuOpen ? 'block translate-x-0' : ' translate-x-full hidden'} fixed right-0`}
+        className={`lg:hidden transition-transform duration-400 z-50 ${isMobileMenuOpen ? 'block translate-x-0' : ' translate-x-full'} fixed right-0`}
               ref={menuRef}
       >
         <div className="space-y-1 border border-teal-100 px-2 pt-2 pb-3 bg-gray-100 w-fit rounded-l-2xl shadow-2xl">
