@@ -31,7 +31,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Céline Castronovo - Psychologue diplômée',
-    description: 'Consultations et thérapies individuelles à Montpellier.',
+    description: 'Céline Castronovo - Consultations et thérapies individuelles à Montpellier.',
     images: [
       'https://psychologie-montpellier.fr/images/celine_castronovo.webp',
     ],
