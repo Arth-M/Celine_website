@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import 'tailwindcss';
 
+
 @theme {
   --font-general: 'Nunito', sans-serif;
-}
-
-
-@theme {
   /* Define your custom color scale using CSS variable names matching Tailwind’s naming convention */
   --color-pale-prim-50: #fefee8;
   --color-pale-prim-100: #fefebf;
