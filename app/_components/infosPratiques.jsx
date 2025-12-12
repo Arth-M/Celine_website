@@ -113,8 +113,11 @@ export default function InfosPratiques() {
         <hr className="border-pale-prim-400 dark:border-gray-700 w-full mt-10 mb-5" />
       </div>
       <div className="block text-pale-prim-950 text-center">
-        <p className='font-medium text-xs'>E.I. Céline Castronovo - 2025 Tous droits réservés</p>
-        <p className='font-medium text-xs'>Réalisé par <a href="http://www.atuweb.fr" className="font-medium text-xs">ATU-Web</a></p>
+        <p className='font-medium text-xs tracking-tight'>E.I. Céline Castronovo - 2025 Tous droits réservés</p>
+        <div className="w-fit mx-auto">
+          <hr className="border-pale-prim-400 dark:border-gray-700 w-full my-1"/>
+          <p className='font-medium text-xs tracking-wide'>Réalisé par <a href="http://www.atuweb.fr" className="font-medium text-xs">ATU-Web</a></p>
+        </div>
       </div>
     </div>
   )
