@@ -40,7 +40,6 @@ export default function ArrowUp() {
         width="15"
         height="15"
         preload="true"
-        priority="true"
         className="object-cover h-fit rounded-l-xl text-copperfield-400"
         // className="object-cover w-25 h-fit rounded-full bg-copperfield-400"
       />

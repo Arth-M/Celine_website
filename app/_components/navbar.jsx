@@ -84,6 +84,7 @@ export default function Navbar() {
     >
       <div id="nav-div" className="mx-auto opacity-70 px-2 md:px-5 w-full">
         <div className="relative w-full grid grid-flow-col grid-cols-[minmax(180px,4fr)_minmax(110px,1.2fr)_minmax(15px,0.8fr)] sm:grid-cols-[minmax(180px,4fr)_minmax(110px,1.5fr)_minmax(15px,0.5fr)] lg:grid-cols-[minmax(230px,3fr)_minmax(610px,5fr)_minmax(110px,1fr)] items-center justify-start">
+          <a href="#maps">
           <div className="flex justify-start items-center wrap-normal">
             <Image
               src="/images/pin.svg"
@@ -101,6 +102,7 @@ export default function Navbar() {
               10 avenue de Toulouse, 34070 Montpellier
             </p>
           </div>
+          </a>
 
           <div className="hidden lg:flex items-center justify-end min-w-[607px]">
             <div className="space-x-4 justify-center items-center">
@@ -221,42 +223,42 @@ export default function Navbar() {
         <div className="space-y-1 border border-teal-100 px-2 pt-2 pb-3 bg-gray-100 w-fit rounded-l-2xl shadow-2xl">
           <a
             href="#section-accueil"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg ease-in duration-100 text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Accueil
           </a>
           <a
             href="#section-biography"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg ease-in duration-100 text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Qui suis-je ?
           </a>
           <a
             href="#section-methodes"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg ease-in duration-100 text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Mes méthodes
           </a>
           <a
             href="#section-pourquoi"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg ease-in duration-100 text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Pourquoi consulter ?
           </a>
           <a
             href="#section-populations"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg ease-in duration-100 text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Pour qui ?
           </a>
           <a
             href="#section-infos"
-            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg text-right whitespace-nowrap"
+            className="block font-light rounded-md px-3 py-2 text-base text-teal-700 hover:bg-white/5 hover:text-teal-950 hover:text-lg ease-in duration-100 text-right whitespace-nowrap"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Informations pratiques
