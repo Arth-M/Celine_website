@@ -82,8 +82,8 @@ export default function Navbar() {
         isVisible ? 'bg-gray-100 border-b border-b-teal-600' : 'bg-transparent'
       }`}
     >
-      <div id="nav-div" className="mx-auto opacity-70 px-2 md:px-5 w-full">
-        <div className="relative w-full grid grid-flow-col grid-cols-[minmax(180px,4fr)_minmax(110px,1.2fr)_minmax(15px,0.8fr)] sm:grid-cols-[minmax(180px,4fr)_minmax(110px,1.5fr)_minmax(15px,0.5fr)] lg:grid-cols-[minmax(230px,3fr)_minmax(610px,5fr)_minmax(110px,1fr)] items-center justify-start">
+      <div id="nav-div" className="mx-auto opacity-70 px-2 md:px-5 w-full text-lg">
+        <div className="relative w-full grid grid-flow-col grid-cols-[minmax(180px,4fr)_minmax(110px,1.2fr)_minmax(15px,0.8fr)] sm:grid-cols-[minmax(180px,4fr)_minmax(110px,1.5fr)_minmax(15px,0.5fr)] lg:grid-cols-[minmax(210px,2fr)_minmax(674px,5fr)_minmax(60px,1fr)] items-center justify-start">
           <a href="#maps">
           <div className="flex justify-start items-center wrap-normal">
             <Image
@@ -104,7 +104,7 @@ export default function Navbar() {
           </div>
           </a>
 
-          <div className="hidden lg:flex items-center justify-end min-w-[607px]">
+          <div className="hidden lg:flex items-center justify-end min-w-[675px]">
             <div className="space-x-4 justify-center items-center">
               <a
                 href="#section-accueil"
@@ -149,7 +149,7 @@ export default function Navbar() {
 
               <a
                 href="#section-infos"
-                className={`rounded-md font-light text-md hover:bg-white/5  ${
+                className={`rounded-md text-nowrap font-light text-md hover:bg-white/5  ${
                   isVisible
                     ? ' text-teal-700 hover:text-teal-900 hover:font-normal'
                     : ' text-teal-900  hover:text-white'
