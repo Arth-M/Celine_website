@@ -15,7 +15,7 @@ export default function CardBelle() {
             preload="true"
             className="object-scale-down lg:object-cover rounded-full w-[60%] h-auto mx-auto mb-3 mt-2 border-1 border-teal-700 shadow-sm"
           />
-          <p className="tracking-wider text-md text-teal-900 mx-auto text-center w-fit no-wrap">
+          <p className="tracking-wider text-xl font-bold text-teal-900 mx-auto text-center w-fit no-wrap">
             Céline Castronovo
           </p>
           <p className="tracking-wide text-teal-900 text-md mx-auto text-center w-fit font-light">

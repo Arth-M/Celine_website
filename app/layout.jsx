@@ -117,8 +117,11 @@ export default function RootLayout({ children }) {
           }}
         />
         <link rel="icon" type="image/svg" href="./images/care2.svg"></link>
+        <style>
+         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        </style>
       </head>
-      <body className="m-0 p-0 w-screen h-screen relative bg-teal-50 font-general">
+      <body className="m-0 p-0 w-screen h-screen relative bg-teal-50 nunito">
         {children}
       </body>
     </html>
