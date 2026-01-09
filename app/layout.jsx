@@ -17,10 +17,10 @@ export const metadata = {
     description:
       "Céline Castronovo s'appuie sur la Psychologie cognitive, la TCC et l'EMDR pour accompagner ses patients face aux difficultés de la vie et dans le traitement des traumas.",
     siteName: 'Céline Castronovo - Psychologue',
-    url: 'https://psychologie-montpellier.fr',
+    // url: 'https://psychologie-montpellier.fr',
     images: [
       {
-        url: 'https://psychologie-montpellier.fr/images/celine_castronovo.webp',
+        // url: 'https://psychologie-montpellier.fr/images/celine_castronovo.webp',
         width: 309,
         height: 303,
         alt: 'Photographie de Céline Castronovo, Psychologue à Montpellier',
@@ -33,12 +33,12 @@ export const metadata = {
     title: 'Céline Castronovo - Psychologue diplômée',
     description: 'Céline Castronovo - Consultations et thérapies individuelles à Montpellier.',
     images: [
-      'https://psychologie-montpellier.fr/images/celine_castronovo.webp',
+      // 'https://psychologie-montpellier.fr/images/celine_castronovo.webp',
     ],
   },
   // Lien canonique
   alternates: {
-    canonical: 'https://psychologie-montpellier.fr', // à remplacer
+    // canonical: 'https://psychologie-montpellier.fr', // à remplacer
   },
 }
 
@@ -66,7 +66,7 @@ export const jsonLdData = {
   // },
   telephone: '+33-6-15-43-51-99', // à remplacer
   email: 'c.castronovo.34@gmail.com', // à remplacer
-  url: 'https://psychologie-montpellier.fr', // à remplacer
+  // url: 'https://psychologie-montpellier.fr', // à remplacer
   sameAs: [
     'https://www.doctolib.fr/psychologue/montpellier/celine-castronovo',
     'https://maps.app.goo.gl/Jh3uujHr15YaRqXc6',
