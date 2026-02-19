@@ -13,7 +13,7 @@ import InfosPratiques from './_components/infosPratiques'
 export default function Home() {
   const [codeTrue, setCodeTrue] = useState(false)
   const [userTest, setUserTest] = useState(false)
-  const [code, setCode] = useState("")
+  const [code, setCode] = useState('')
 
   const handleCodeSubmit = () => {
     code === '0889' ? setCodeTrue(true) : setUserTest(true)
@@ -21,24 +21,37 @@ export default function Home() {
 
   if (!codeTrue) {
     return (
-       <div className="bg-teal-500 px-5 w-full h-full flex flex-col items-center justify-center">
-        <label htmlFor="code" className="text-xl text-white text-center">Site en construction. <br></br>Un code est nécessaire pour y accéder</label>
-        <input type="password" name='code' placeholder="xxxx"
-        value={code}
-        onChange={(e) => setCode(e.target.value)}
-        className="border border-gray-200 rounded-lg mt-4 px-2 py-1"
+      <div className="bg-teal-500 px-5 w-full h-full flex flex-col items-center justify-center">
+        <label htmlFor="code" className="text-xl text-white text-center">
+          Site en construction. <br></br>Un code est nécessaire pour y accéder
+        </label>
+        <input
+          type="password"
+          name="code"
+          placeholder="xxxx"
+          value={code}
+          onChange={(e) => setCode(e.target.value)}
+          className="border border-gray-200 rounded-lg mt-4 px-2 py-1"
         />
-        <button onClick={handleCodeSubmit} className="rounded-xl bg-calypso-400 shadow-calypso-800 shadow-lg hover:bg-calypso-500 hover:-translate-y-0.5 px-3 py-2 text-white font-semibold mt-6 tracking-wide">Envoyer</button>
-        {userTest ?
-        <div className="text-sm text-orange-700 mt-1">Il est nécessaire d'entrer le bon code pour continuer
+        <button
+          onClick={handleCodeSubmit}
+          className="rounded-xl bg-calypso-400 shadow-calypso-800 shadow-lg hover:bg-calypso-500 hover:-translate-y-0.5 px-3 py-2 text-white font-semibold mt-6 tracking-wide"
+        >
+          Envoyer
+        </button>
+        {userTest ? (
+          <div className="text-sm text-orange-700 mt-1">
+            Il est nécessaire d'entrer le bon code pour continuer
+          </div>
+        ) : (
+          <div className="hidden"></div>
+        )}
       </div>
-    :
-    <div className="hidden"></div>}
-    </div>
     )
   } else {
     return (
       <main className="flex flex-col w-screen">
+        <div className="hidden"></div>
         <Navbar />
         <section id="section-accueil" className="flex-initial not-arrow-up">
           <HeroImage />
