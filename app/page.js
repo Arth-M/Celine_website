@@ -51,7 +51,6 @@ export default function Home() {
   } else {
     return (
       <main className="flex flex-col w-screen">
-        <div className="hidden"></div>
         <Navbar />
         <section id="section-accueil" className="flex-initial not-arrow-up">
           <HeroImage />
