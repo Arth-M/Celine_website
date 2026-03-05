@@ -16,7 +16,7 @@ export default function Home() {
   const [code, setCode] = useState('')
 
   const handleCodeSubmit = () => {
-    code === '0889' ? setCodeTrue(true) : setUserTest(true)
+    code === '6543' ? setCodeTrue(true) : setUserTest(true)
   }
 
   if (!codeTrue) {
